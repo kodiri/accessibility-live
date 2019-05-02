@@ -7,9 +7,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        
+        <a class="twitter-timeline" data-width="1000" data-height="400" href="https://twitter.com/TfLAccess?ref_src=twsrc%5Etfw">Tweets by TfLAccess</a>
+        
         <a
           className="App-link"
           href="https://reactjs.org"
