@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() { sa
+function App() { 
   return (
     <div className="App">
 
