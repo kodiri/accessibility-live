@@ -1,7 +1,7 @@
 import React from 'react';
 import './css/App.css';
 
-function App() {
+function App() { 
   return (
     <div className="App">
       <button type="button">Accessibility Life</button>
