@@ -1,3 +1,121 @@
+
+
+Message List
+
+@author S Braham [10:09 AM]
+Accessibility Live - Readme.md 
+
+#### [Contributors](#contributor)|
+
+- Carl
+- Sule
+- Pelin 
+- Helder 
+- Walter
+- Sharleen 
+
+# </a> Team Charlie
+#### [Introduction](#intro)|
+[Scope](#scope)|
+[Trello Board](#trello) |
+[Stack](#stack) |
+[Tech Notes](#technotes)|
+[Possible Query params](#params) |
+[User Stories](#stories) | 
+[Your local machine environment](#howto)|
+[Useful tutorials](#tutorials)|
+[Useful links](#useful) <br>
+### <a name="intro"></a>Introduction :
+Website : [Transport for London](https://tfl.gov.uk/)
+The transport for London website provides people who wish to travel on public transport, with an option to plan their journey. Passengers with disabiities are very important passengers who require accurate information when planning their journey.
+Currently, people with a disability are not able to determine whether key facilities, such as a lift, are functioning at a certain station. Neither are they able to know if the stations they plan to use are busy.  
+Thus, Accessibility live is a website where pertinent information that is useful to such important passengers will be readily available.
+A passenger with a disability will be able to easily plan their journey with current facilities, popular times and other services for a station being presented to them.
+The Accessibility live website is built in React and JavaScript on AWS Lambda, hosted on GitHub.
+
+### <a name="scope"></a> Scope :
+### <a name="trello"></a>Trello Board :
+Link to board if you have one
+### <a name="stack"></a>Stack :
+|Technology| Version/Docs|
+|---|---|
+|JavaScript|ES6|
+|Node.js|10.15.3|
+|ReactJS|[Docs Link](https://reactjs.org/)|
+
+
+|Testing|:speak_no_evil:|
+### <a name="technotes"></a>Tech Notes :
+
+```
+Method  endpoint
+POST   /passengers
+Table journey planner
+|id | starting station | end station | email/Twitter Id | general experience |
+
+```
+### <a name="front-end"/></a>Post request schema :
+```
+
+```
+### <a name="params"/></a>Possible query params :
+| `query params` or `endpoints` or TBD |
+| --- |
+| Find all disabled passengers |
+| Find by Underground station |
+| Find by Name    |
+### <a name="stories"></a>User Stories :
+```
+As a user
+So that I can easily find the information about whether the station facilities are functioning
+I want to be able to see the lift information in one place
+```
+```
+As a user
+so that I know how many lifts are working in the city
+I want to be able to search by Underground station
+```
+```
+As a user
+so that I can see the traffic for a particular station
+I want to be able to search by Underground station
+```
+```
+As a user
+so that I can see only the stations with functioning lifts
+I want to be able to filter functioning lifts
+```
+```
+As a user
+so that I can select which Underground station can accommodate my needs
+I want to be able to see functioning lifts and passenger traffic
+```
+```
+As a user
+so that I do not travel to an Underground station that cannot support my disability
+I want to be able to see if a station is currently equipped to help me
+```
+### <a name="howto"></a>Your local machine environment :
+Please add info here, what should everyone install ...
+### <a name="tutorials"></a>Useful tutorials :
+Please add here if you know any for the stack mentioned above...
+### <a name="useful"></a> Useful Information and Links:
+**Github codebase:**
+https://github.com/kodiri/accessibility-live
+
+**Summary of all ideas proposed for the project:**
+Ideas proposed as a project included:
+Create an option for filtering YouTube videos that are less than 5 or 10 minutes in length.
+A website/Application for pollution.
+A website/Application for cocktail making
+A template for e-commerce shopping
+Geo location
+
+Collapse
+
+Message Input
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
