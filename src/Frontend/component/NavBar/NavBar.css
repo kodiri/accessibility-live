@@ -1,0 +1,22 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.Container {
+  background-color: #fdcf32;
+  height: 60px;
+}
+
+.NavBar {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.NavBar li {
+  font-weight: 800;
+  text-decoration: none;
+  padding-top: 20px;
+}
