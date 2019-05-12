@@ -1,33 +1,168 @@
+  
+/*border for the top */
+img {
+border-radius: 6px;
+height: 100%;
+width: 100%
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  background: #152536;
+}
+
+/* First Card*/
+
+
+/* Basic card setup (stil in Progress) */
+
+.card {
+  width: calc(33% - 2rem);
+  min-width: calc(33% - 2rem);
+  min-height: 400px;
+  margin: 1rem;
+}
+
+/* This defines which position has the fron or the back at that moment //  Transform style is the*/
+.flipCard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* This flips the card!! (stil in Progress) */
+.card:hover .flipCard {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.frontCard, .backCard {
+  box-sizing: border-box;
+  border-radius: 6px;
   align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+/* front card (still in progress) */
+.frontCard {
+  background-color: #bbb;
+  text-align: center;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.frontText{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* backCard  */
+.backCard {
+  color: white;
+  background: #fff;
+  transform: rotateY(180deg);
+  padding: 0 2em;
+ 
+}
+
+.text{
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 300;
+  color: #333;
+  font-family: "Nunito Sans", sans-serif;
+  padding: 2px 16px; 
+}
+
+
+/* Second Card*/
+
+.card2 {
+  margin: 1rem;
+  font-family: 'Roboto', sans-serif;
+  background-color: #fafafa;
+  display: table;
+  border-radius: 6px;
+  width: calc(33% - 2rem);
+  min-width: calc(33% - 2rem);
+  min-height: 400px;
+}
+
+  .cardDetails{
+  box-sizing: border-box;
+  border-radius: 6px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.card2 {
+  transition: all 0.25s ease-in;
+  border-bottom: 5px solid transparent;
+}
+h1{
+  text-align: center;
+}
+.card2:hover {
+  transform: translateY(-5px);
+  border: none;
+  border-bottom: 5px solid #2196fe;
+  
+}
+.readMore{
+  text-decoration: none;
+  outline: none;
+  color: #2196fe;
+  transition: all 0.25s ease-in; 
+  text-align: left;
+
+}
+
+.screen{
+  display: block;
+  width: 100%;
+  
+}
+
+/* card 3*/
+
+.card3{
+	size: 350px;
+	border: radius 3px;
+	box-shadow:0 1px 4px rgba(#000, .3);
+  overflow:hidden;
+}
+
+.screen3{
+  size: cover;
+}
+
+.text3{
+  position: absolute;
+}
+.description3{
+  position: relative;
+  background-color: white;
+  padding:14px 24px;
+  transition: .4s .15s cubic-bezier(.17,.67,.5,1.03);
+}
+
+.description3:hover{
+  transform:translateY(-260px);
+}
+.title{
+  position:relative;
+  margin: 10px 0;
+  letter-spacing: 3px;
 }
