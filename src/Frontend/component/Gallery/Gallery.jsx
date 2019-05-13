@@ -6,8 +6,6 @@ export default function Gallery() {
   return (
     <div className='layout'>
       <Cards></Cards>
-      <Cards></Cards>
-
     </div>
   );
 }
