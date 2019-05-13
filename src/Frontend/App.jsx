@@ -1,7 +1,9 @@
 import React from 'react';
 import './css/App.css';
 import cardImage from './diala.jpg';
-import NavBar from './component/NavBar/NavBar.js';
+// Components
+import NavBar from './component/NavBar/NavBar';
+import Twitter from './component/Twitter/Twitter';
 
 function App() {
   return (
@@ -65,6 +67,7 @@ function App() {
           </div>
         </div>
       </div>
+      <Twitter />
     </>
   );
 }
