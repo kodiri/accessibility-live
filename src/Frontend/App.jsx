@@ -1,12 +1,14 @@
 import React from 'react';
-import './css/App.css';
 import cardImage from './diala.jpg';
 // Components
 import NavBar from './component/NavBar/NavBar';
 import Twitter from './component/Twitter/Twitter';
+import AboutUs from './component/About/AboutUs';
+import Footer from './component/Footer/Footer_get';
 
 function App() {
   return (
+
     <>
       <NavBar />
 
@@ -68,6 +70,9 @@ function App() {
         </div>
       </div>
       <Twitter />
+      <AboutUs/>
+      <Footer/>
+
     </>
   );
 }

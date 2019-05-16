@@ -23,7 +23,7 @@ width: 100%
   margin: 1rem;
 }
 
-/* This defines which position has the fron or the back at that moment //  Transform style is the*/
+/* This defines which position has the front or the back at that moment //  Transform style is the*/
 .flipCard {
   position: relative;
   width: 100%;
@@ -33,7 +33,7 @@ width: 100%
   transform-style: preserve-3d;
 }
 
-/* This flips the card!! (stil in Progress) */
+/* This flips the card!! (still in Progress) */
 .card:hover .flipCard {
   transform: rotateY(180deg);
 }
@@ -165,4 +165,12 @@ h1{
   position:relative;
   margin: 10px 0;
   letter-spacing: 3px;
+}
+
+.contacts{
+  box-sizing: border-box;
+  border-radius: 6px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
