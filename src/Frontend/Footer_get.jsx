@@ -1,9 +1,8 @@
 import React from 'react'; //?? remove
-
-import AccessLive from './Frontend/Images/AccessLive logo.svg';
-import Gmail from './Frontend/Images/Gmail logo.svg';
-import Facebook from './Frontend/Images/Facebook logo.svg';
-import Twitterlogo from './Frontend/Images/Twitter logo.svg';
+import AccessLive from './Images/AccessLive logo.svg';
+import Gmail from './Images/Gmail logo.svg';
+import Facebook from './Images/Facebook logo.svg';
+import Twitterlogo from './Images/Twitter logo.svg';
 // import './Footer.css'; //'./App.css'
 
 export default function Footer () { 
@@ -14,18 +13,17 @@ export default function Footer () {
           <div className='alivelogo'>
             {/* <div className='footer-logos'> */}
             {/* <img src={props.logo} alt='logo' /> */}
-            <ALiveFoot id='accesslive' name='AccessLive' logo={AccessLive} />
+            <label id='accesslive' name='AccessLive' logo={AccessLive} />
           </div>
           <div className='contacts'>
-            <ALiveFoot id='gmail' name='Gmail' logo={Gmail} />
+            <label id='gmail' name='Gmail' logo={Gmail} />
             {/* <img src={Gmail} alt='Gmail logo' /> */}
-            <ALiveFoot id='facebook' name='Facebook' logo={Facebook} />
-            <ALiveFoot id='twitter' name='Twitter' logo={Twitterlogo} />
+            <label id='facebook' name='Facebook' logo={Facebook} />
+            <label id='twitter' name='Twitter' logo={Twitterlogo} />
           </div>
           <div>
             <div className='copyright'>
-            <ALiveFoot name='Copyright' logo={<p>
-              © All Content is the copyright of Team Charlie 2019. All rights reserved.</p>}/>
+            <p>© All Content is the copyright of Team Charlie 2019. All rights reserved.</p>
             </div>
           </div>
         </div>
@@ -41,14 +39,14 @@ export default function Footer () {
   //                 <h1>Mulan</h1>
   //               </div>
   // export default Footer;
-{/* class Footer extends Component {
-    render() {
-      return (
-        <div className="App">
-          <
-            <Stack name='Patch Adams' logo={PatchAdams} />
-            <Stack name='Elf' logo={Elf} />
-          </div>
+// {/* class Footer extends Component {
+//     render() {
+//       return (
+//         <div className="App">
+//           <
+//             <Stack name='Patch Adams' logo={PatchAdams} />
+//             <Stack name='Elf' logo={Elf} />
+//           </div>
 
-export default Footer; */}
+// export default Footer; */}
 

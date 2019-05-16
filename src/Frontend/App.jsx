@@ -7,8 +7,9 @@ function App() {
   return (
     <div className="App">
       <button type="button">Accessibility Live</button>
-      <Footer/>
       <AboutUs/>
+      <Footer/>
+
     </div>
   );
 }
