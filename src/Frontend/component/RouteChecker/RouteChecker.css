@@ -1,0 +1,47 @@
+.RouteChecker {
+  width: 100%;
+  height: 100%;
+  background-color: rebeccapurple;
+  padding: 2em 2em;
+}
+.RouteChecker__Title {
+  color: white;
+  margin-bottom: 1em;
+  font-size: 1.5em;
+}
+.RouteChecker__Inputs__Container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.RouteChecker__Input {
+  box-shadow: 0 5px 10px 3px rgba(76, 4, 78, 0.5);
+  text-align: center;
+  max-width: 300px;
+  flex: 1;
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+.RouteChecker__Input:first-child {
+  margin-right: 3em;
+}
+.RouteChecker__Button {
+  border: 0;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 0.5em 2em;
+  background-color: gold;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+.RouteChecker__Button:hover {
+  cursor: pointer;
+  background-color: rgb(219, 187, 6);
+  color: rgb(221, 217, 217);
+}
