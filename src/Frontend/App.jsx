@@ -5,6 +5,7 @@ import NavBar from './component/NavBar/NavBar';
 import Twitter from './component/Twitter/Twitter';
 import AboutUs from './component/About/AboutUs';
 import Footer from './component/Footer/Footer_get';
+import UsefulLinks from './component/UsefulLinks/UsefulLinks';
 
 function App() {
   return (
@@ -70,8 +71,10 @@ function App() {
         </div>
       </div>
       <Twitter />
+      <UsefulLinks />
       <AboutUs/>
       <Footer/>
+      
 
     </>
   );
