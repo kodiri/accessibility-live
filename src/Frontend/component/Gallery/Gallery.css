@@ -1,0 +1,13 @@
+* {
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .layout {
+    background-color: #fdcf32;
+    height: px;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em 10%;
+  }
+  
