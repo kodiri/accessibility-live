@@ -1,5 +1,5 @@
 import React from 'react';
-import './Twitter.css';
+import '../Twitter/Twitter.css';
 
 export default function Twitter() {
   return (
