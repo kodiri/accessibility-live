@@ -1,32 +1,30 @@
+// Helpers
 const express = require('express');
-const Twit = require('twit');
+const fetch = require('node-fetch');
+const TwitterFetch = require('./helpers/TwitterFetch');
+require('dotenv').config();
 
 const app = express();
 
-const config = {
-  consumer_key: '0FaGAgBSlsBh1paQWPclXwIqz',
-  consumer_secret: 'coX8nGKKpM4ua6YxECKJDD11JGlUB8E4iIKMg7EOYc6otnOw1h',
-  access_token: '1127979460710551552-W3q3tukSXLoj7IosEeJxjDOnciyjhG',
-  access_token_secret: 'vbeTXuMKQAbCxunCaBkvXDXwlFk2XvXyxfJbibzuHZAeQ',
-  imeout_ms: 60 * 1000, // optional HTTP request timeout to apply to all requests.
-  strictSSL: true, // optional - requires SSL certificates to be valid.
-  AccessControlAllowOrigin: '*',
-};
-const T = new Twit(config);
+// Settings
+app.set('PORT', process.env.PORT || 3001);
 
-// T.get(
-//   'search/tweets',
-//   { q: 'tfl lift access since:2019-05-13', count: 100 },
-//   (err, data, response) => {
-//     console.log(data.statuses.map(status => status.text));
-//   },
-// );
+// Routes
 
-T.get(
-  'search/tweets',
-  { q: 'tfl lift access since:2019-05-13', count: 100, url: 'https://twitter.com/TfL' },
-  (err, data, response) => {
-    console.log(data.statuses.map(status => status.text));
-  },
-);
-app.listen(3000, () => console.log('server working on port 3000'));
+app.get('/api/tweets/:from/:to', async (req, res) => {
+  console.log('params', req.params.from, req.params.to);
+  const data = await TwitterFetch(data => res.send(data));
+  console.log(data);
+  res.send(data);
+});
+
+// app.get('/api/tweets/:from/:to', async (req, res) => {
+//   const TFLUrl = 'https://api.tfl.gov.uk/Journey/JourneyResults/sw15%204jj/to/EC2M%207PP?journeyPreference=LeastTime&accessibilityPreference=NoSolidStairs&app_key=0a5a732a8d1cc7964db465db7c9c5223&app_id=c0da7c08';
+
+//   console.log('params', req.params.from, req.params.to);
+//   fetch(TFLUrl)
+//     .then(response => response.json())
+//     .then(data => res.send(data));
+// });
+
+app.listen(app.get('PORT'), () => console.log(`server working on port ${app.get('PORT')}`));
