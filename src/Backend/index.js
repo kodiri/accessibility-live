@@ -40,9 +40,9 @@ app.get('/api/tfl/StationName/:from/:to', async (req, res) => {
   fetch(TFLUrl)
     .then(response => response.json())
     .then((data) => {
-      const to_parameterValue = data.toLocationDisambiguation.disambiguationOptions[0].parameterValue;
-      const from_parameterValue = data.fromLocationDisambiguation.disambiguationOptions[0].parameterValue;
-      const newTFLUrl = `https://api.tfl.gov.uk/Journey/JourneyResults/${from_parameterValue}/to/${to_parameterValue}?journeyPreference=LeastTime&accessibilityPreference=NoSolidStairs&app_key=${key}&app_id=${id}`;
+      const toParameterValue = data.toLocationDisambiguation.disambiguationOptions[0].parameterValue;
+      const fromParameterValue = data.fromLocationDisambiguation.disambiguationOptions[0].parameterValue;
+      const newTFLUrl = `https://api.tfl.gov.uk/Journey/JourneyResults/${fromParameterValue}/to/${toParameterValue}?journeyPreference=LeastTime&accessibilityPreference=NoSolidStairs&app_key=${key}&app_id=${id}`;
       fetch(newTFLUrl)
         .then(response => response.json())
         .then((Data) => {

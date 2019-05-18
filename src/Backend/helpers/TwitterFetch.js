@@ -11,7 +11,7 @@ async function TwitterFetch() {
     AccessControlAllowOrigin: '*',
   };
   const T = new Twit(config);
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     T.get(
       'search/tweets',
       { q: 'tfl lift access since:2019-05-13', count: 100, url: 'https://twitter.com/TfL' },
