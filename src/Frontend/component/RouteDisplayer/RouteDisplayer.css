@@ -1,11 +1,15 @@
 .RouteDisplayer {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: blueviolet;
   padding: 1.5em 10%;
 }
 
 .RouteDisplayer__List {
-  width: 100%;
+  width: 50%;
+  flex: 1;
   max-height: 600px;
   overflow-y: scroll;
   padding: 0 1em;

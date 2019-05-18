@@ -1,6 +1,6 @@
 const Twit = require('twit');
 
-async function TwitterFetch(func) {
+async function TwitterFetch() {
   const config = {
     consumer_key: process.env.CONSUMER_KEY,
     consumer_secret: process.env.CONSUMER_SECRET,
@@ -11,11 +11,13 @@ async function TwitterFetch(func) {
     AccessControlAllowOrigin: '*',
   };
   const T = new Twit(config);
-  return T.get(
-    'search/tweets',
-    { q: 'tfl lift access since:2019-05-13', count: 100, url: 'https://twitter.com/TfL' },
-    (err, data, response) => func(data.statuses.map(status => status.text)),
-  );
+  return new Promise((resolve, reject) => {
+    T.get(
+      'search/tweets',
+      { q: 'tfl lift access since:2019-05-13', count: 100, url: 'https://twitter.com/TfL' },
+      (err, data, response) => resolve(data.statuses.map(status => status.text)),
+    );
+  });
 }
 
 module.exports = TwitterFetch;
