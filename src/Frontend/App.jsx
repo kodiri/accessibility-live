@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 import './css/App.css';
 // Components
@@ -10,7 +9,6 @@ import UsefulLinks from './component/UsefulLinks/UsefulLinks';
 import AboutUs from './component/About/AboutUs';
 import Footer from './component/Footer/Footer_get';
 
-        
 class App extends Component {
   constructor() {
     super();
@@ -25,8 +23,8 @@ class App extends Component {
         <Cards />
         <Twitter />
         <UsefulLinks />
-        <AboutUs/>
-        <Footer/>
+        <AboutUs />
+        <Footer />
       </div>
     );
   }

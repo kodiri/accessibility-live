@@ -25,11 +25,34 @@
   border: 0;
   border-radius: 10px;
   margin: 0 auto;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 .RouteChecker__Input:first-child {
   margin-right: 3em;
 }
+
+.RouteChecker__CheckBoxes__Container {
+  margin-bottom: 1em;
+}
+
+.RouteChecker__CheckBoxes__item {
+  color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.RouteChecker__CheckBoxes__item--checkbox {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  margin-right: 1em;
+}
+
+.RouteChecker__CheckBoxes__item--checkbox:first-child {
+  margin-bottom: 0.5em;
+}
+
 .RouteChecker__Button {
   border: 0;
   display: block;

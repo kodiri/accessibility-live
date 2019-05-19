@@ -10,21 +10,48 @@ const app = express();
 app.set('PORT', process.env.PORT || 3001);
 
 // Routes
-
-app.get('/api/tweets/:from/:to', async (req, res) => {
-  console.log('params', req.params.from, req.params.to);
-  const data = await TwitterFetch(data => res.send(data));
-  console.log(data);
-  res.send(data);
+app.get('/api/tweets', async (req, res) => {
+  const tweets = await TwitterFetch();
+  res.send(tweets);
 });
 
-// app.get('/api/tweets/:from/:to', async (req, res) => {
-//   const TFLUrl = 'https://api.tfl.gov.uk/Journey/JourneyResults/sw15%204jj/to/EC2M%207PP?journeyPreference=LeastTime&accessibilityPreference=NoSolidStairs&app_key=0a5a732a8d1cc7964db465db7c9c5223&app_id=c0da7c08';
+app.get('/api/tfl/PostCode/:from/:to', async (req, res) => {
+  const { from, to } = req.params;
+  const id = process.env.TLF_ID;
+  const key = process.env.TLF_KEY;
+  const TFLUrl = `https://api.tfl.gov.uk/Journey/JourneyResults/${from}/to/${to}?journeyPreference=LeastTime&accessibilityPreference=NoSolidStairs&app_key=${key}&app_id=${id}`;
 
-//   console.log('params', req.params.from, req.params.to);
-//   fetch(TFLUrl)
-//     .then(response => response.json())
-//     .then(data => res.send(data));
-// });
+  fetch(TFLUrl)
+    .then(response => response.json())
+    .then((data) => {
+      const { journeys } = data;
+      const newJourney = journeys.map(journey => journey.legs.map(leg => leg.instruction.summary));
+      return newJourney;
+    })
+    .then(data => res.send(data));
+});
+
+app.get('/api/tfl/StationName/:from/:to', async (req, res) => {
+  const { from, to } = req.params;
+  const id = process.env.TLF_ID;
+  const key = process.env.TLF_KEY;
+  const TFLUrl = `https://api.tfl.gov.uk/Journey/JourneyResults/${from}/to/${to}?journeyPreference=LeastTime&accessibilityPreference=NoSolidStairs&app_key=${key}&app_id=${id}`;
+
+  fetch(TFLUrl)
+    .then(response => response.json())
+    .then((data) => {
+      const toParameterValue = data.toLocationDisambiguation.disambiguationOptions[0].parameterValue;
+      const fromParameterValue = data.fromLocationDisambiguation.disambiguationOptions[0].parameterValue;
+      const newTFLUrl = `https://api.tfl.gov.uk/Journey/JourneyResults/${fromParameterValue}/to/${toParameterValue}?journeyPreference=LeastTime&accessibilityPreference=NoSolidStairs&app_key=${key}&app_id=${id}`;
+      fetch(newTFLUrl)
+        .then(response => response.json())
+        .then((Data) => {
+          const { journeys } = Data;
+          const newJourney = journeys.map(journey => journey.legs.map(leg => leg.instruction.summary));
+          return newJourney;
+        })
+        .then(journey => res.send(journey));
+    });
+});
 
 app.listen(app.get('PORT'), () => console.log(`server working on port ${app.get('PORT')}`));

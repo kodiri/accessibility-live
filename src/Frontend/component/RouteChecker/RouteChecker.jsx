@@ -10,7 +10,16 @@ export default class RouteChecker extends Component {
       from: '',
       to: '',
       data: '',
+      PostCodeCB: true,
+      tweets: '',
     };
+  }
+
+  handleCheckBoxChanges() {
+    const { PostCodeCB } = this.state;
+    this.setState({
+      PostCodeCB: !PostCodeCB,
+    });
   }
 
   handleInputChange(e) {
@@ -20,23 +29,46 @@ export default class RouteChecker extends Component {
     });
   }
 
-  handleSearchRoute() {
-    const { from, to } = this.state;
-    this.setState({ searching: false });
-    fetch(`/api/tweets/${from}/${to}`)
-      .then(response => response.json())
-      .then((data) => {
-        console.log(data);
+  fetchTweets() {
+    fetch('/api/tweets')
+      .then(data => data.json())
+      .then((tweets) => {
         this.setState({
-          data,
+          tweets,
         });
-      })
-      .catch(err => console.log(err));
+      });
+  }
+
+  handleSearchRoute() {
+    const { from, to, PostCodeCB } = this.state;
+    this.setState({ searching: false });
+    this.fetchTweets();
+    if (PostCodeCB) {
+      fetch(`/api/tfl/PostCode/${from}/${to}`)
+        .then(response => response.json())
+        .then((data) => {
+          console.log(data);
+          this.setState({
+            data: data[0],
+          });
+        })
+        .catch(err => console.log(err));
+    } else {
+      fetch(`/api/tfl/StationName/${from}/${to}`)
+        .then(response => response.json())
+        .then((data) => {
+          console.log(data);
+          this.setState({
+            data: data[0],
+          });
+        })
+        .catch(err => console.log(err));
+    }
   }
 
   render() {
     const {
-      from, to, searching, data,
+      from, to, searching, data, PostCodeCB, tweets,
     } = this.state;
     if (searching) {
       return (
@@ -60,6 +92,28 @@ export default class RouteChecker extends Component {
               onChange={e => this.handleInputChange(e)}
             />
           </div>
+          <div className="RouteChecker__CheckBoxes__Container">
+            <div className="RouteChecker__CheckBoxes__item">
+              <input
+                type="checkbox"
+                className="RouteChecker__CheckBoxes__item--checkbox"
+                name="PostCodeCB"
+                checked={PostCodeCB}
+                onClick={() => this.handleCheckBoxChanges()}
+              />
+              <p className="RouteChecker__CheckBoxes__item--description">Seach by Post Code</p>
+            </div>
+            <div className="RouteChecker__CheckBoxes__item">
+              <input
+                className="RouteChecker__CheckBoxes__item--checkbox"
+                type="checkbox"
+                name="StationCB"
+                checked={!PostCodeCB}
+                onClick={() => this.handleCheckBoxChanges()}
+              />
+              <p className="RouteChecker__CheckBoxes__item--description">Seach by Station Name</p>
+            </div>
+          </div>
           <button
             type="button"
             className="RouteChecker__Button"
@@ -71,7 +125,7 @@ export default class RouteChecker extends Component {
       );
     }
     if (data) {
-      return <RouteDisplayer data={data} />;
+      return <RouteDisplayer data={data} tweets={tweets} from={from} to={to} />;
     }
     return <div>Loading...</div>;
   }
