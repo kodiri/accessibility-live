@@ -1,0 +1,56 @@
+.RouteDisplayer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blueviolet;
+  padding: 1.5em 10%;
+}
+
+.RouteDisplayer__List {
+  width: 50%;
+  flex: 1;
+  max-height: 600px;
+  overflow-y: scroll;
+  padding: 0 1em;
+}
+.RouteDisplayer__Title {
+  color: white;
+  margin-bottom: 1em;
+}
+
+.RouteDisplayer__Message {
+  box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.3);
+  list-style: none;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  margin-bottom: 0.2em;
+  background-color: #f6f6f6;
+  transition: all 0.3s ease-in;
+}
+.RouteDisplayer__Message:hover {
+  transform: translate(0, -0.3em);
+  box-shadow: 0 3px 10px 3px rgba(0, 0, 0, 0.4);
+  background-color: #c7c4c4;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(252, 232, 118);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: gold;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(189, 160, 0);
+}

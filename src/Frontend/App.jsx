@@ -1,4 +1,4 @@
-/* eslint-disable react/prefer-stateless-function */
+{/* eslint-disable react/prefer-stateless-function
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import React, { Component } from 'react';
 import './css/App.css';
@@ -25,6 +25,36 @@ class App extends Component {
         </Router>
       </>
    );
+  */}
+import React, { Component } from 'react';
+import './css/App.css';
+// Components
+import NavBar from './component/NavBar/NavBar';
+import Twitter from './component/Twitter/Twitter';
+import RouteChecker from './component/RouteChecker/RouteChecker';
+import Cards from './component/Cards/Cards';
+import UsefulLinks from './component/UsefulLinks/UsefulLinks';
+import AboutUs from './component/About/AboutUs';
+import Footer from './component/Footer/Footer_get';
+
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {};
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <NavBar />
+        <RouteChecker />
+        <Cards />
+        <Twitter />
+        <UsefulLinks />
+        <AboutUs />
+        <Footer />
+      </div>
+    );
   }
 }
 

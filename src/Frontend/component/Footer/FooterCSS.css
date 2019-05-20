@@ -1,0 +1,52 @@
+
+.Footer {
+  width: 100%;
+  padding: 1em;
+}
+
+.Footer .contacts {
+  width: 40%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.Footer .contacts img {
+  width: 15%;
+  height: auto;
+  margin-left: 1em;
+}
+
+.Footer .bottom {
+  display: flex;
+  width: 80%;
+  justify-content: start;
+  align-items: center;
+}
+
+.Footer .alivelogo {
+  flex: 1;
+}
+
+.Footer .alivelogo img {
+  width: 100%;
+}
+
+.Footer .copyright {
+  width: 100%; 
+  text-align: center;
+  flex: 4;
+  margin-left: 1em;
+}
+
+
+/* .Twitter-logo
+<div>Icons made by <a href="https://www.flaticon.com/authors/bogdan-rosu" title="Bogdan Rosu">Bogdan Rosu</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+.Facebook-logo
+<div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+.Gmail-logo
+<div>Icons made by <a href="https://www.flaticon.com/authors/icomoon" title="Icomoon">Icomoon</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+.Github-logo
+<div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> */
