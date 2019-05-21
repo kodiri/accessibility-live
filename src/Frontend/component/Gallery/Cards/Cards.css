@@ -1,55 +1,52 @@
-
 .card {
   display: inblock;
-
 }
 
-.card:hover{
+.card:hover {
   transform: translateY(-5px);
   border-bottom: 5px solid #2196fe;
 }
 
-.cardImg{
-  float:right;
-  height:auto;
+.cardImg {
+  float: right;
+  height: auto;
   position: relative;
   size: cover;
   background-position: center;
 }
 
-.cardTitle{
-    position: absolute;
-    bottom: 8px;
-    left: 75px;
-    color: tomato;
-    font-family: "Avenir Next", "Avenir", sans-serif;
-    padding: 10px 25px 10px 25px;
-  }
+.cardTitle {
+  position: absolute;
+  bottom: 8px;
+  left: 75px;
+  color: tomato;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  padding: 10px 25px 10px 25px;
+}
 
-.cardDetails{
+.cardDetails {
   padding: 10px 25px 10px 25px;
   bottom: 0;
   color: #808080;
-  font-family: 'proxima-nova-soft', sans-serif;
-
+  font-family: "proxima-nova-soft", sans-serif;
 }
 
-.readMore{
+.readMore {
   position: absolute;
   bottom: 0px;
   text-align: left;
 
-
-  
   padding: 10px 25px 10px 25px;
   border-radius: 0px 0px 4px 5px;
-  
+
   border-top: 1px solid #e0e0e0;
   background: #efefef;
   width: 100%;
 }
 
-a {
+/* I had to add a comment here due to those lines are polluting the global scope */
+/* If you want to modify the <a> please add or className or a className of the parent element before */
+/* a {
   text-decoration:none;
   font-size: 17px;
   text-align: center;
@@ -66,4 +63,4 @@ a {
 a:hover {
   color:tomato;
   transition: all .25s ease-out;
-}
+} */
