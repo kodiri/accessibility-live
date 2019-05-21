@@ -32,7 +32,7 @@ import './css/App.css';
 import NavBar from './component/NavBar/NavBar';
 import Twitter from './component/Twitter/Twitter';
 import RouteChecker from './component/RouteChecker/RouteChecker';
-import Cards from './component/Cards/Cards';
+import Gallery from './component/Gallery/Gallery';
 import UsefulLinks from './component/UsefulLinks/UsefulLinks';
 import AboutUs from './component/About/AboutUs';
 import Footer from './component/Footer/Footer_get';
@@ -48,7 +48,7 @@ class App extends Component {
       <div className="App">
         <NavBar />
         <RouteChecker />
-        <Cards />
+        <Gallery />
         <Twitter />
         <UsefulLinks />
         <AboutUs />
