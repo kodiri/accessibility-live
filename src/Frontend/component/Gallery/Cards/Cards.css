@@ -1,15 +1,30 @@
 .card {
-  display: inblock;
+  position: relative;
+  background: white;
+  z-index: 1;
+
+  width: 336px;
+  height: 470px;
+  margin: 10px;
+  overflow:auto;
+
+  border-radius: .25rem;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  transition: all 0.25s ease-in;
+  border-bottom: 0px !important;
+
 }
 
-.card:hover {
+.card:hover{
   transform: translateY(-5px);
   border-bottom: 5px solid #2196fe;
 }
 
-.cardImg {
-  float: right;
-  height: auto;
+.cardImg{
+  float:right;
+  height:auto;
   position: relative;
   size: cover;
   background-position: center;
@@ -28,19 +43,17 @@
   padding: 10px 25px 10px 25px;
   bottom: 0;
   color: #808080;
-  font-family: "proxima-nova-soft", sans-serif;
+  font-family: 'proxima-nova-soft', sans-serif;
+
 }
 
-.readMore {
+.readMore{
   position: absolute;
-  bottom: 0px;
   text-align: left;
-
+  bottom: 0px;
   padding: 10px 25px 10px 25px;
-  border-radius: 0px 0px 4px 5px;
-
   border-top: 1px solid #e0e0e0;
-  background: #efefef;
+  background-color: #efefef;
   width: 100%;
 }
 
