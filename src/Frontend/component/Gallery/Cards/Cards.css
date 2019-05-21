@@ -32,12 +32,12 @@
 }
 
 .cardTitle{
-    position: absolute;
-    bottom: 8px;
-    left: 75px;
-    color: tomato;
-    font-family: "Avenir Next", "Avenir", sans-serif;
-    padding: 10px 25px 10px 25px;
+  position: absolute;
+  bottom: 8px;
+  left: 75px;
+  color: tomato;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  padding: 10px 25px 10px 25px;
   }
 
 .cardDetails{
