@@ -1,7 +1,19 @@
 
 .card {
-  display: inblock;
+  position: relative;
+  background: white;
+  z-index: 1;
 
+  width: 336px;
+  height: 470px;
+  margin: 10px;
+  overflow:auto;
+
+  border-radius: .25rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  transition: all 0.25s ease-in;
+  border-bottom: 5px solid transparent;
 }
 
 .card:hover{
@@ -18,12 +30,12 @@
 }
 
 .cardTitle{
-    position: absolute;
-    bottom: 8px;
-    left: 75px;
-    color: tomato;
-    font-family: "Avenir Next", "Avenir", sans-serif;
-    padding: 10px 25px 10px 25px;
+  position: absolute;
+  bottom: 8px;
+  left: 75px;
+  color: tomato;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  padding: 10px 25px 10px 25px;
   }
 
 .cardDetails{
