@@ -1,6 +1,6 @@
 import React from 'react';
 import './How.css';
-import happyGuyInWheelChairImg from '../../../images/guy_weelchair.jpg';
+import happyGuyInWheelChairImg from '../../../Images/guy_weelchair.jpg';
 
 export default function How() {
   return (
