@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './RouteChecker.css';
 import RouteDisplayer from '../RouteDisplayer/RouteDisplayer';
+import Loader from '../Loader/Loader';
 
 export default class RouteChecker extends Component {
   constructor() {
@@ -127,6 +128,6 @@ export default class RouteChecker extends Component {
     if (data) {
       return <RouteDisplayer data={data} tweets={tweets} from={from} to={to} />;
     }
-    return <div>Loading...</div>;
+    return <Loader />;
   }
 }

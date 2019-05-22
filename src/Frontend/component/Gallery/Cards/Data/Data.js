@@ -41,197 +41,161 @@ const data = {
         "index": 0,
         "picture": underground,
         "title": "Underground",
-        "description": "Short Description",
-        "tag": "Public"
-
+        "description": "Short Description"
     },
     {
         "_id": "2",
         "index": 1,
         "picture":  overground,
         "title": "Overground",
-        "description": "Short Description",
-        "tag": "Public"
+        "description": "Short Description"
     },
     {
         "_id": "3",
         "index": 2,
         "picture":  bus,
         "title": "Bus",
-        "description": "Short Description",
-        "tag": "Public"
+        "description": "Short Description"
     },
 	{
         "_id": "4",
         "index": 3,
         "picture": coach,
         "title": "Coach",
-        "description": "Short Description",
-        "tag": "Public"
+        "description": "Short Description"
     },
 	{
         "_id": "5",
         "index": 4,
         "picture":  dlr,
         "title": "DLR",
-        "description": "Short Description",
-        "tag": "Public"
+        "description": "Short Description"
     },
 	{
         "_id": "6",
         "index": 5,
         "picture": nationalrail,
         "title": "National Rail",
-        "description": "Short Description",
-        "tag": "Public"
+        "description": "Short Description"
     },
 	{
         "_id": "7",
         "index": 6,
         "picture":  tramlink,
         "title": "Tramlink",
-        "description": "Short Description",
-        "tag": "Public"
+        "description": "Short Description"
     },
 	{
         "_id": "8",
         "index": 7,
         "picture": emirates,
         "title": "The Emirate Air Line",
-        "description": "Short Description",
-        "tag": "Public"
+        "description": "Short Description"
     },
 	{
         "_id": "9",
         "index": 8,
         "picture":  eurostar,
         "title": "Eurostar",
-        "description": "Short Description",
-        "tag": "Public Transport"
+        "description": "Short Description"
     },
 	{
         "_id": "10",
         "index": 9,
         "picture":  dial,
         "title": "Dial-a-Ride",
-        "description": "Short Description",
-        "tag": "Door to Door"
+        "description": "Short Description"
     },
 	{
         "_id": "11",
         "index": 10,
         "picture": taxicard,
         "title": "Taxicard",
-<<<<<<< HEAD
         "description": "Short Description"
-    },
-    {
-        "_id": "3",
-        "index": 2,
-        "picture":  taxicard,
-        "title": "Testcard",
-        "description": "Short Description"
-=======
-        "description": "Short Description",
-        "tag": "Door to Door"
     },
 	{
         "_id": "12",
         "index": 11,
         "picture":  capital,
         "title": "Capital Call",
-        "description": "Short Description",
-        "tag": "Door to Door"
+        "description": "Short Description"
     },
 	{
         "_id": "13",
         "index": 12,
         "picture": nhs,
         "title": "Patient Transport",
-        "description": "Short Description",
-        "tag": "Door to Door"
+        "description": "Short Description"
     },
 	{
         "_id": "14",
         "index": 13,
         "picture":  community,
         "title": "Community Transport",
-        "description": "Short Description",
-        "tag": "Door to Door"
+        "description": "Short Description"
     },
 	{
         "_id": "15",
         "index": 14,
         "picture": redbridge,
         "title": "Redbridge Mobility Card",
-        "description": "Short Description",
-        "tag": "Door to Door"
-    },
-	{
-        "_id": "16",
-        "index": 15,
-        "picture": blue,
-        "title": "Blue badge",
-        "description": "Short Description",
-        "tag": "Door to Door"
+        "description": "Short Description"
     },
 	{
         "_id": "17",
         "index": 16,
-        "picture": free,
-        "title": "Freedom Pass",
-        "description": "Short Description",
-        "tag": "Concessionary"
+        "picture": blue,
+        "title": "Blue badge",
+        "description": "Short Description"
     },
 	{
         "_id": "18",
         "index": 17,
-        "picture":  disabledrailcard,
-        "title": "Disabled Railcard",
-        "description": "Short Description",
-        "tag": "Door to Door",
-        "tag": "Concessionary"
+        "picture": free,
+        "title": "Freedom Pass",
+        "description": "Short Description"
     },
 	{
         "_id": "19",
         "index": 18,
-        "picture": nationalcoach,
-        "title": "National Express Coachcard",
-        "description": "Short Description",
-        "tag": "Concessionary"
+        "picture":  disabledrailcard,
+        "title": "Disabled Railcard",
+        "description": "Short Description"
     },
 	{
         "_id": "20",
         "index": 19,
-        "picture": oyster,
-        "title": "60+ Oystercard",
-        "description": "Short Description",
-        "tag": "Concessionary Travel"
+        "picture": nationalcoach,
+        "title": "National Express Coachcard",
+        "description": "Short Description"
     },
 	{
         "_id": "21",
         "index": 20,
-        "picture": scooter,
-        "title": "Mobility Scooters",
-        "description": "Short Description",
-        "tag": "Personal"
+        "picture": oyster,
+        "title": "60+ Oystercard",
+        "description": "Short Description"
     },
 	{
         "_id": "22",
         "index": 21,
-        "picture": cycling,
-        "title": "Cycling",
-        "description": "Short Description",
-        "tag": "Personal"
+        "picture": scooter,
+        "title": "Mobility Scooters",
+        "description": "Short Description"
     },
 	{
         "_id": "23",
         "index": 22,
+        "picture": cycling,
+        "title": "Cycling",
+        "description": "Short Description"
+    },
+	{
+        "_id": "24",
+        "index": 23,
         "picture":  shop,
         "title": "Shopmobility",
-        "description": "Short Description",
-        "tag": "Personal"
->>>>>>> master
+        "description": "Short Description"
     }
     ]
 }
