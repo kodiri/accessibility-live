@@ -17,6 +17,10 @@ function NavBar() {
         </div>
 
         <div className="NavBar__Menu_Item">
+          <Link to="/Details">Details</Link>
+        </div>
+
+        <div className="NavBar__Menu_Item">
           <Link to="/UsefulLinks">Links</Link>
         </div>
 
