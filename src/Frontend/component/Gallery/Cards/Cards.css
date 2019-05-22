@@ -6,25 +6,24 @@
   width: 336px;
   height: 470px;
   margin: 10px;
-  overflow:auto;
+  overflow: auto;
 
-  border-radius: .25rem;
+  border-radius: 0.25rem;
 
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
   transition: all 0.25s ease-in;
   border-bottom: 0px !important;
-
 }
 
-.card:hover{
+.card:hover {
   transform: translateY(-5px);
- /* border-bottom: 5px solid #2196fe;*/
+  /* border-bottom: 5px solid #2196fe;*/
 }
 
-.cardImg{
-  float:right;
-  height:auto;
+.cardImg {
+  float: right;
+  height: auto;
   position: relative;
   size: cover;
   background-position: center;
@@ -43,11 +42,10 @@
   padding: 10px 25px 10px 25px;
   bottom: 0;
   color: #808080;
-  font-family: 'proxima-nova-soft', sans-serif;
-
+  font-family: "proxima-nova-soft", sans-serif;
 }
 
-.readMore{
+.readMore {
   position: absolute;
   text-align: left;
   bottom: 0px;
@@ -60,10 +58,9 @@
 /* I had to add a comment here due to those lines are polluting the global scope */
 /* If you want to modify the <a> please add or className or a className of the parent element before */
 /* a {
-  text-decoration:none;
+  text-decoration: none;
   font-size: 17px;
   text-align: center;
-  
 
   font-weight: 500;
   letter-spacing: 2px;
@@ -71,7 +68,6 @@
   color: black;
   text-transform: uppercase;
   display: inline-block;
-
 }
 a:hover {
   color:tomato;

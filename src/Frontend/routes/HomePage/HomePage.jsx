@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './HomePage.css';
 // Components
 import Why from './Why/Why';
@@ -20,10 +21,14 @@ export default function HomePage() {
             First app to keep you updated about all the lifts working in your area
           </p>
         </div>
-        <button type="button" className="HomePage__HeroPhoto__Button">
-          Start now
-        </button>
-        <div className="HomePage__HeroPhoto__Arrow" />
+        <Link to="/Search">
+          <button type="button" className="HomePage__HeroPhoto__Button">
+            Start now
+          </button>
+        </Link>
+        <a href="#Why">
+          <div className="HomePage__HeroPhoto__Arrow" />
+        </a>
       </div>
       <Why />
       <How />

@@ -21,12 +21,12 @@ export default function MeetTheTeam() {
           ambition of helping to improve lives.
         </div>
         <div className="MeetTheTeam__Photos">
-          <Member name="Gray" photo={GrayImg} />
-          <Member name="S.B." photo={SBImg} />
-          <Member name="Pelin" photo={PelinImg} />
-          <Member name="Walter" photo={WalterImg} />
-          <Member name="Sule" photo={SuleImg} />
-          <Member name="Carl" photo={CarlImg} />
+          <Member name="Gray" photo={GrayImg} linkedIn="walterperezhernandez/" />
+          <Member name="S.B." photo={SBImg} linkedIn="s-b-63286967/" />
+          <Member name="Pelin" photo={PelinImg} linkedIn="walterperezhernandez/" />
+          <Member name="Walter" photo={WalterImg} linkedIn="walterperezhernandez/" />
+          <Member name="Sule" photo={SuleImg} linkedIn="walterperezhernandez/" />
+          <Member name="Carl" photo={CarlImg} linkedIn="walterperezhernandez/" />
         </div>
       </div>
     </div>
