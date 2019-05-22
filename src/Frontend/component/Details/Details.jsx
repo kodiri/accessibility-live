@@ -23,5 +23,5 @@ export default function Details() {
                 </div>
             </div>
         </Router>
-        );
-    }
+    );
+}
