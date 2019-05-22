@@ -238,3 +238,10 @@ body * {
   max-width: 226px;
   margin: 0 auto;
 }
+<<<<<<< HEAD
+=======
+a:hover {
+  color: tomato;
+  transition: all 0.25s ease-out;
+} */
+>>>>>>> #MInior updates in Homepage
