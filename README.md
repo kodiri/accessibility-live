@@ -66,8 +66,6 @@ Link to board if you have one
 
 
 
-
-
 ### <a name="technotes"></a>Tech Notes :
 
 ```
