@@ -4,11 +4,15 @@
   }
   
   .layout {
-    background-color: #fdcf32;
+    overflow: hidden;
+
     height: 600px;
-    justify-content: center;
-    align-items: center;
+
+    background-color: #999;
     padding: 1.5em 10%;
-    
+
+    box-sizing: border-box;
+    border: 2px solid #999;
+    border-radius: 5px;
   }
   
