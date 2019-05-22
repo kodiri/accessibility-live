@@ -70,6 +70,6 @@
   display: inline-block;
 }
 a:hover {
-  color:tomato;
-  transition: all .25s ease-out;
+  color: tomato;
+  transition: all 0.25s ease-out;
 } */
