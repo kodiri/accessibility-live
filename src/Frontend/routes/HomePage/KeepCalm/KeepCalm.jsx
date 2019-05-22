@@ -12,7 +12,7 @@ export default function KeepCalm() {
           &
           <br />
           stay t
-          <span className="KeepCalm__text--underline">une</span>
+          <span className="KeepCalm__text--underline">uned</span>
 !
         </h2>
       </div>
@@ -20,9 +20,9 @@ export default function KeepCalm() {
         <img className="KeepCalm__Photo" src={guyInWheelChairImg} alt="wheelchair vs stairs" />
         <div className="KeepCalm__Description">
           <p className="KeepCalm__Description__text">
-            We provide you in real time the last updates about your search getting data from twitter
-            and TfL. If something is not working someone will let you know and if you were surprised
-            by a not working lift, please be the first to let know what is going on!
+            We provide you with the last updates about your search, in real time. We use data from twitter
+            and TfL. If something is not working, someone will let you know. If you discover a lift
+            is not working, please be the first to let us know!
           </p>
         </div>
       </div>
