@@ -2,7 +2,7 @@ import React from 'react';
 
 import Twitter from '../component/Twitter/Twitter';
 import RouteChecker from '../component/RouteChecker/RouteChecker';
-import Cards from '../component/Cards/Cards';
+import Cards from '../component/Gallery/Gallery';
 import UsefulLinks from '../component/UsefulLinks/UsefulLinks';
 import AboutUs from '../component/About/AboutUs';
 

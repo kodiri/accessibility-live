@@ -1,14 +1,14 @@
+import { Switch, Route } from 'react-router-dom';
 import React, { Component } from 'react';
 import './css/App.css';
-// Components
+// Routes
+import HomePage from './routes/HomePage/HomePage';
+import SearchPage from './routes/SearchPage';
+import UsefulLinksPage from './routes/UsefulLinksPage';
+import AboutPage from './routes/AboutPage';
+//Components
 import NavBar from './component/NavBar/NavBar';
-import Twitter from './component/Twitter/Twitter';
-import RouteChecker from './component/RouteChecker/RouteChecker';
-import Gallery from './component/Gallery/Gallery';
-import UsefulLinks from './component/UsefulLinks/UsefulLinks';
-import AboutUs from './component/About/AboutUs';
 import Footer from './component/Footer/Footer_get';
-
 class App extends Component {
   constructor() {
     super();
@@ -19,11 +19,12 @@ class App extends Component {
     return (
       <div className="App">
         <NavBar />
-        <RouteChecker />
-        <Gallery />
-        <Twitter />
-        <UsefulLinks />
-        <AboutUs />
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route exact path="/Search" component={SearchPage} />
+          <Route exact path="/UsefulLinks" component={UsefulLinksPage} />
+          <Route exact path="/AboutUs" component={AboutPage} />
+        </Switch>
         <Footer />
       </div>
     );

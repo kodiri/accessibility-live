@@ -1,4 +1,3 @@
-
 .card {
   position: relative;
   background: white;
@@ -31,16 +30,16 @@
   background-position: center;
 }
 
-.cardTitle{
+.cardTitle {
   position: absolute;
   bottom: 8px;
   left: 75px;
   color: tomato;
   font-family: "Avenir Next", "Avenir", sans-serif;
   padding: 10px 25px 10px 25px;
-  }
+}
 
-.cardDetails{
+.cardDetails {
   padding: 10px 25px 10px 25px;
   bottom: 0;
   color: #808080;
@@ -49,19 +48,18 @@
 }
 
 .readMore{
-
   position: absolute;
   text-align: left;
   bottom: 0px;
-
   padding: 10px 25px 10px 25px;
-
   border-top: 1px solid #e0e0e0;
   background-color: #efefef;
   width: 100%;
 }
 
-a {
+/* I had to add a comment here due to those lines are polluting the global scope */
+/* If you want to modify the <a> please add or className or a className of the parent element before */
+/* a {
   text-decoration:none;
   font-size: 17px;
   text-align: center;
@@ -78,4 +76,4 @@ a {
 a:hover {
   color:tomato;
   transition: all .25s ease-out;
-}
+} */
