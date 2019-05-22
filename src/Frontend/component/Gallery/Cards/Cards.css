@@ -19,7 +19,7 @@
 
 .card:hover{
   transform: translateY(-5px);
-  border-bottom: 5px solid #2196fe;
+ /* border-bottom: 5px solid #2196fe;*/
 }
 
 .cardImg{

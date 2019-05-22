@@ -1,7 +1,7 @@
 import React from 'react';
 import './NavBar.css';
 import { Link } from 'react-router-dom';
-import logo from '../../images/charlie-team-logo.svg';
+import logo from '../../Images/charlie-team-logo.svg';
 
 function NavBar() {
   return (

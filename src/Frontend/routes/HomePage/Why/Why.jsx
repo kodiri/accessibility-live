@@ -1,6 +1,6 @@
 import React from 'react';
 import './Why.css';
-import guyInWheelChairImg from '../../../images/weelchair_vs_stairs.jpg';
+import guyInWheelChairImg from '../../../Images/weelchair_vs_stairs.jpg';
 
 export default function Why() {
   return (

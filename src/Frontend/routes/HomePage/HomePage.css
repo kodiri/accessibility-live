@@ -7,7 +7,7 @@
   width: 100%;
   height: 100vmin;
   background: linear-gradient(-45deg, #04293fc4 0%, #ff660067 100%),
-    url("./../../images/weelchair.jpg") center center/3000px 2000px no-repeat;
+    url("./../../Images/weelchair.jpg") center center/3000px 2000px no-repeat;
   background-size: cover;
   padding: 5em 10%;
   display: flex;

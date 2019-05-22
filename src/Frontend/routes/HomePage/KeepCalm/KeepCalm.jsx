@@ -1,6 +1,6 @@
 import React from 'react';
 import './KeepCalm.css';
-import guyInWheelChairImg from '../../../images/laptop-smatphone-mockup.jpg';
+import guyInWheelChairImg from '../../../Images/laptop-smatphone-mockup.jpg';
 
 export default function KeepCalm() {
   return (
