@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './HeroImg.css';
+import paperAirplaneIcon from '../../../Images/icons/start-up.svg';
 
 export default function HeroImg() {
   return (
@@ -15,12 +16,12 @@ export default function HeroImg() {
           First app to keep you updated about all the lifts working in your area
         </p>
       </div>
-      <Link to="/Search">
+      <Link to="/Search" className="HomePage__HeroPhoto--Button__Download">
         <button type="button" className="HomePage__HeroPhoto__Button">
-          Start now
+          Start now <img src={paperAirplaneIcon} alt="start up" className="Button__Icon__Start" />
         </button>
       </Link>
-      <a href="#Why">
+      <a href="#Why" className="HomePage__HeroPhoto--Button__Arrow">
         <div className="HomePage__HeroPhoto__Arrow" />
       </a>
     </div>

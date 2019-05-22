@@ -17,6 +17,7 @@ export default function KeepCalm() {
 !
         </h2>
         <a
+          className="a__button__apk"
           href="https://mega.nz/#!sZcWnALI!fMMKlbXC3gOAbtfCWMoholqUcE-UDL7mtGNIFGkJWII"
           target="_blank"
         >
@@ -24,7 +25,7 @@ export default function KeepCalm() {
         </a>
       </div>
       <div className="KeepCalm__Container__Flex">
-        <img className="KeepCalm__Photo" src={guyInWheelChairImg} alt="wheelchair vs stairs" />
+        <img className="KeepCalm__Photo" src={guyInWheelChairImg} alt="promo app" />
         <div className="KeepCalm__Description">
           <p className="KeepCalm__Description__text">
             We provide you with the last updates about your search, in real time. We use data from

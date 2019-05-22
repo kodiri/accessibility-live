@@ -1,6 +1,7 @@
 import React from 'react';
 import './MeetTheTeam.css';
 import Member from './Member/Member';
+import teamSvg from "./../../../Images/icons/group.svg";
 // Images
 import CarlImg from './MemberPhotos/carl.jpg';
 import SuleImg from './MemberPhotos/Sule.png';
@@ -13,7 +14,7 @@ export default function MeetTheTeam() {
   return (
     <div className="MeetTheTeam">
       <div className="MeetTheTeam__Title">
-        <h2>Meet the Team</h2>
+        <h2><img src={teamSvg} className="MeetTheTeam__Icon" alt="how icon" />Meet the Team</h2>
       </div>
       <div className="MeetTheTeam__Flex__Container">
         <div className="MeetTheTeam__Description">
