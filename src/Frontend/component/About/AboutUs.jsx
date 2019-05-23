@@ -2,9 +2,9 @@ import React from 'react';
 import './AboutUs.css';
 
 export default function AboutUs() {
-  return [
+  return (
     <div className='About'>
-      <p><h1>About Us</h1>
+      <h1>About Us</h1>
       <br></br>
     <h2>Team Charlie's mission is for everybody to have a pleasant experience using public transport. 
       
@@ -14,5 +14,5 @@ export default function AboutUs() {
       
     We want our Accessibility Live application to be the leader in helping many people with transportation.</h2></p>
     </div>
-];
+  );
 }
