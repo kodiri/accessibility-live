@@ -1,21 +1,27 @@
 // Helpers
-const express = require('express');
-const fetch = require('node-fetch');
-const TwitterFetch = require('./helpers/TwitterFetch');
-require('dotenv').config();
+const express = require("express");
+const fetch = require("node-fetch");
+const TwitterFetch = require("./helpers/TwitterFetch");
+const path = require("path");
+require("dotenv").config();
 
 const app = express();
 
 // Settings
-app.set('PORT', process.env.PORT || 3001);
+app.set("PORT", process.env.PORT || 3001);
+app.use(express.static(path.join(__dirname + "./../../build")));
 
 // Routes
-app.get('/api/tweets', async (req, res) => {
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "./../../build/", "index.html"));
+});
+
+app.get("/api/tweets", async (req, res) => {
   const tweets = await TwitterFetch();
   res.send(tweets);
 });
 
-app.get('/api/tfl/PostCode/:from/:to', async (req, res) => {
+app.get("/api/tfl/PostCode/:from/:to", async (req, res) => {
   const { from, to } = req.params;
   const id = process.env.TLF_ID;
   const key = process.env.TLF_KEY;
@@ -23,15 +29,17 @@ app.get('/api/tfl/PostCode/:from/:to', async (req, res) => {
 
   fetch(TFLUrl)
     .then(response => response.json())
-    .then((data) => {
+    .then(data => {
       const { journeys } = data;
-      const newJourney = journeys.map(journey => journey.legs.map(leg => leg.instruction.summary));
+      const newJourney = journeys.map(journey =>
+        journey.legs.map(leg => leg.instruction.summary)
+      );
       return newJourney;
     })
     .then(data => res.send(data));
 });
 
-app.get('/api/tfl/StationName/:from/:to', async (req, res) => {
+app.get("/api/tfl/StationName/:from/:to", async (req, res) => {
   const { from, to } = req.params;
   const id = process.env.TLF_ID;
   const key = process.env.TLF_KEY;
@@ -39,19 +47,25 @@ app.get('/api/tfl/StationName/:from/:to', async (req, res) => {
 
   fetch(TFLUrl)
     .then(response => response.json())
-    .then((data) => {
-      const toParameterValue = data.toLocationDisambiguation.disambiguationOptions[0].parameterValue;
-      const fromParameterValue = data.fromLocationDisambiguation.disambiguationOptions[0].parameterValue;
+    .then(data => {
+      const toParameterValue =
+        data.toLocationDisambiguation.disambiguationOptions[0].parameterValue;
+      const fromParameterValue =
+        data.fromLocationDisambiguation.disambiguationOptions[0].parameterValue;
       const newTFLUrl = `https://api.tfl.gov.uk/Journey/JourneyResults/${fromParameterValue}/to/${toParameterValue}?journeyPreference=LeastTime&accessibilityPreference=NoSolidStairs&app_key=${key}&app_id=${id}`;
       fetch(newTFLUrl)
         .then(response => response.json())
-        .then((Data) => {
+        .then(Data => {
           const { journeys } = Data;
-          const newJourney = journeys.map(journey => journey.legs.map(leg => leg.instruction.summary));
+          const newJourney = journeys.map(journey =>
+            journey.legs.map(leg => leg.instruction.summary)
+          );
           return newJourney;
         })
         .then(journey => res.send(journey));
     });
 });
 
-app.listen(app.get('PORT'), () => console.log(`server working on port ${app.get('PORT')}`));
+app.listen(app.get("PORT"), () =>
+  console.log(`server working on port ${app.get("PORT")}`)
+);
