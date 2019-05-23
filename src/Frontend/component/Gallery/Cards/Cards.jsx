@@ -1,22 +1,28 @@
 import React from 'react';
-import cardImage from '../Images/diala.jpg';
-import './Cards.css';
+import PropTypes from 'prop-types';
+import './Cards.css'
 
-export default function Cards() {
-    return (
-        <div className="container">
-            <div className="card">
-                <div className="cardImg">
-                    <img src={cardImage} alt="" />
-                    <span class='cardTitle'>Dial-a-Ride</span>
-                </div>
-                <div className="cardDetails">
-                    <p>Description</p>
-                </div>
-                <div className="readMore">
-                    <a href="#" >READ MORE</a>
-                </div>
-            </div>
-        </div>
-    );
+const divStyle1 = {
+  width: '360px',
+  hiddenoverflow: '',
+};
+
+const Card = ({ service }) => {
+  const { index, picture, title, description } = service;
+  return (
+    <div id={`card-${index}`} className="cardCss" style={divStyle1}>
+      <img src={picture} alt={title} alt="Image" className="cardPic" />
+      <div className="tags">
+        <div className="travelTag"><p>Door to Door</p></div>
+        <div className="title"><h1>{title}</h1></div>
+        <div className="description"><p>{description}</p></div>
+      </div>
+      <a href="#0" className="readmeTag">Read More</a>
+    </div>
+  );
 }
+Card.propTypes = {
+  service: PropTypes.object.isRequired
+}
+
+export default Card;
