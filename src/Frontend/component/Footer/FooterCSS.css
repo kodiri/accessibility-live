@@ -2,7 +2,7 @@
   width: 100%;
   padding: 1em;
   background-color: #0f0f0f;
-  color: gold;
+  color: #f15a24;
 }
 
 .Footer .contacts {
@@ -15,7 +15,7 @@
   width: 15%;
   height: auto;
   margin-left: 1em;
-  background-color: gold;
+  background-color: #f15a24;
   border-radius: 50%;
 }
 
@@ -40,3 +40,8 @@
   flex: 4;
   margin-left: 1em;
 }
+
+.Footer .fa-facebook {
+  background-color: #0f0f0f;
+}
+
