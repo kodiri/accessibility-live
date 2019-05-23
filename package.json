@@ -22,7 +22,7 @@
     "start-dev": "npm-run-all -p server start",
     "lint": ".\\node_modules\\.bin\\eslint --fix src",
     "eject": "react-scripts eject",
-    "start": "npm run start-backend"
+    "start": "node ./src/Backend/index.js"
   },
   "eslintConfig": {
     "extends": "react-app"
