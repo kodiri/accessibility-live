@@ -1,5 +1,5 @@
 import React from 'react'; 
-import './FooterCSS.css'; 
+import './FooterCSS.css';
 
 import AccessLive from './Images/Disab logo.png';
 import GitHub from './Images/githublogo.svg';
