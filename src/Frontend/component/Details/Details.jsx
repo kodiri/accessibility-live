@@ -6,16 +6,15 @@ import DetailsChart from './Images/Details-Chart.png';
 export default function Details() {
     return (
         <div className="container">
-            <h1>
-                Details
-            </h1>
-            <a class="twitter-timeline"
-                    data-width="600"
-                    data-height="600"
-                    href="https://twitter.com/Access_Live_?ref_src=twsrc%5Etfw"
-                    >Tweets by Access_Live_
-            </a> 
-            <img src={DetailsChart} />
+            <div className="container2">
+                <h1>
+                    Details
+                </h1>
+                <div className="twitter-timeline">
+                <a class="twitter-timeline" data-width="700" data-height="700" data-theme="light" href="https://twitter.com/Access_Live_?ref_src=twsrc%5Etfw">Tweets by Access_Live_</a>
+                </div>
+                <img src={DetailsChart} />
+            </div>
         </div>
     );
 }
