@@ -5,7 +5,7 @@ import guyInWheelChairImg from '../../../Images/laptop-smatphone-mockup.jpg';
 export default function KeepCalm() {
   return (
     <div className="KeepCalm">
-      <div className="KeepCalm__Tittle">
+      <div className="KeepCalm__Title">
         <h2>
           Keep Calm
           <br />
