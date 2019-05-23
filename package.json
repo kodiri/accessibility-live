@@ -19,10 +19,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "start-backend": "nodemon ./src/Backend/index.js",
-    "start-dev": "npm-run-all -p server start",
+    "start-dev": "npm-run-all -p start-backend start-frontend",
     "lint": ".\\node_modules\\.bin\\eslint --fix src",
     "eject": "react-scripts eject",
-    "start": "npm run start-backend"
+    "start": "node ./src/Backend/index.js"
   },
   "eslintConfig": {
     "extends": "react-app"
