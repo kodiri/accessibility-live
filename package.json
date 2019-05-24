@@ -21,7 +21,6 @@
     "start-backend": "nodemon ./src/Backend/index.js",
     "start-node": "node ./src/Backend/index.js",
     "start-dev": "run-p start-backend start-frontend",
-    "lint": ".\\node_modules\\.bin\\eslint --fix src",
     "eject": "react-scripts eject",
     "start": "run-s build start-node"
   },
@@ -41,11 +40,6 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^5.16.0",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-plugin-import": "^2.17.2",
-    "eslint-plugin-jsx-a11y": "^6.2.1",
-    "eslint-plugin-react": "^7.13.0",
     "nodemon": "^1.19.0"
   },
   "proxy": "http://localhost:3001"
