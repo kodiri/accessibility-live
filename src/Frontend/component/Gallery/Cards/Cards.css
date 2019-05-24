@@ -38,8 +38,9 @@ body * {
   background-color: #fff;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.15);
 
+
   transition: all 0.25s ease-in;
-  border-bottom: 5px solid transparent;
+  border-bottom: 0px !important;
 }
 
  .cardCss:hover {

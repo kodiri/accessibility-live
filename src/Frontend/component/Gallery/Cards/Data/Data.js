@@ -22,7 +22,7 @@ const data = {
         "_id": "3",
         "index": 2,
         "picture":  taxicard,
-        "title": "Taestcard",
+        "title": "Testcard",
         "description": "Short Description"
     }
     ]
