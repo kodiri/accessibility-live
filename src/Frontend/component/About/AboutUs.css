@@ -1,5 +1,8 @@
-
 .About {
    width: 100%;
    padding: 1.4%;
+}
+
+.About p {
+   font-size: 20px;
 }

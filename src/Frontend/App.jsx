@@ -4,7 +4,7 @@ import './css/App.css';
 // Routes
 import HomePage from './routes/HomePage/HomePage';
 import SearchPage from './routes/SearchPage';
-import UsefulLinksPage from './routes/UsefulLinksPage';
+import DetailsPage from './routes/DetailsPage';
 import AboutPage from './routes/AboutPage';
 //Components
 import NavBar from './component/NavBar/NavBar';
@@ -14,7 +14,7 @@ class App extends Component {
     super();
     this.state = {};
   }
-
+  
   render() {
     return (
       <div className="App">
@@ -22,7 +22,7 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route exact path="/Search" component={SearchPage} />
-          <Route exact path="/UsefulLinks" component={UsefulLinksPage} />
+          <Route exact path="/Details" component={DetailsPage} />
           <Route exact path="/AboutUs" component={AboutPage} />
         </Switch>
         <Footer />
