@@ -15,13 +15,15 @@
     "twit": "^2.2.11"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start-frontend": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "server": "nodemon ./src/Backend/index.js",
-    "start-dev": "npm-run-all -p server start",
+    "start-backend": "nodemon ./src/Backend/index.js",
+    "start-node": "node ./src/Backend/index.js",
+    "start-dev": "run-p start-backend start-frontend",
     "lint": ".\\node_modules\\.bin\\eslint --fix src",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start": "run-s build start-node"
   },
   "eslintConfig": {
     "extends": "react-app"
