@@ -12,8 +12,15 @@ const data = {
         "description": "Short Description"
     },
     {
-        "_id": "593e9297ec4cca9c56bf61af",
+        "_id": "2",
         "index": 1,
+        "picture":  taxicard,
+        "title": "Taxicard",
+        "description": "Short Description"
+    },
+    {
+        "_id": "3",
+        "index": 2,
         "picture":  taxicard,
         "title": "Taxicard",
         "description": "Short Description"
