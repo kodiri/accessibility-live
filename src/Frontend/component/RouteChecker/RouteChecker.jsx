@@ -101,7 +101,7 @@ export default class RouteChecker extends Component {
                 checked={PostCodeCB}
                 onClick={() => this.handleCheckBoxChanges()}
               />
-              <p className="RouteChecker__CheckBoxes__item--description">Seach by Post Code</p>
+              <p className="RouteChecker__CheckBoxes__item--description">Search by Post Code</p>
             </div>
             <div className="RouteChecker__CheckBoxes__item">
               <input
@@ -111,7 +111,7 @@ export default class RouteChecker extends Component {
                 checked={!PostCodeCB}
                 onClick={() => this.handleCheckBoxChanges()}
               />
-              <p className="RouteChecker__CheckBoxes__item--description">Seach by Station Name</p>
+              <p className="RouteChecker__CheckBoxes__item--description">Search by Station Name</p>
             </div>
           </div>
           <button
