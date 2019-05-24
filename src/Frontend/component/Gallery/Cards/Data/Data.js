@@ -17,7 +17,7 @@ const data = {
         "picture":  taxicard,
         "title": "Taxicard",
         "description": "Short Description"
-    }
+    },
     {
         "_id": "2",
         "index": 1,
