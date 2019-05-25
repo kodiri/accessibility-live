@@ -14,6 +14,7 @@
 }
 .HomePage__HeroPhoto__Title {
   flex: 1;
+  color: black;
   font-size: 3em;
   font-weight: 600;
 }
@@ -33,26 +34,28 @@
 
 .HomePage__HeroPhoto__Button {
   position: absolute;
+  font-size: 0.95em !important;
   width: 25%;
   max-width: 200px;
-  padding: 0.75em 2em;
+  padding: 1em 2em;
   background: linear-gradient(-45deg, gold, yellow);
   border: 0;
-  border-radius: 30px;
+  border-radius: 50px;
   position: absolute;
   left: 0;
   right: 0;
   bottom: 4em;
   margin-left: auto;
   margin-right: auto;
-  transition: all linear 0.3s;
+  transition: all linear 0.1s;
   box-shadow: 0 0 15px 2px rgba(255, 217, 0, 0.336);
 }
 
 .HomePage__HeroPhoto__Button:hover {
   cursor: pointer;
+  transform: scale(1.05);
   box-shadow: 0 7px 20px 2px rgba(255, 217, 0, 0.397);
-  background: linear-gradient(-45deg, rgb(230, 195, 2), yellow);
+  background: linear-gradient(to top, rgb(212, 181, 3), yellow);
 }
 
 .HomePage__HeroPhoto__Arrow {
@@ -70,4 +73,14 @@
   bottom: 1em;
   margin-left: auto;
   margin-right: auto;
+}
+
+.Wave__Svg__Img {
+  width: 100%;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  /* background: url("./../../Images/wave-1200.svg"); */
+  background-size: cover;
 }

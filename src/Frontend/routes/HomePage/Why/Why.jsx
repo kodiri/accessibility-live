@@ -4,7 +4,7 @@ import guyInWheelChairImg from '../../../Images/weelchair_vs_stairs.jpg';
 
 export default function Why() {
   return (
-    <div className="Why">
+    <div className="Why" id="Why">
       <div className="Why__Tittle">Why Accessibility Live?</div>
       <div className="Why__Container__Flex">
         <img className="Why__Photo" src={guyInWheelChairImg} alt="wheelchair vs stairs" />

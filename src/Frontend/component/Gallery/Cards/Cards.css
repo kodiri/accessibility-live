@@ -1,5 +1,4 @@
-
-@import url(https://fonts.googleapis.com/css?family=Lora|Roboto:400,500);
+@import url(https://fonts.googleapis.com/css?family=Lora|Roboto:400, 500);
 
 body {
   margin: 0;
@@ -9,25 +8,23 @@ body {
   text-rendering: optimizeLegibility;
   font-variant-ligatures: none;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #fafafa;
-  color: rgba(0,0,0,0.6);
-
+  color: rgba(0, 0, 0, 0.6);
 }
 body::before,
 body::after {
- content: "";
- display: table;
- clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 body * {
- box-sizing: inherit;
- 
+  box-sizing: inherit;
 }
 
 /* Card */
 
-.cardCss{
+.cardCss {
   position: relative;
 
   margin-top: 2rem;
@@ -36,59 +33,58 @@ body * {
   margin-right: auto;
 
   background-color: #fff;
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.15);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
 
   transition: all 0.25s ease-in;
   border-bottom: 5px solid transparent;
 }
 
- .cardCss:hover {
+.cardCss:hover {
   transform: translateY(-5px);
   border: none;
   border-bottom: 5px solid #2196fe;
- }
+}
 
+/* Card*/
 
- /* Card*/
-
- .cards-slider-wrapper {
+.cards-slider-wrapper {
   position: absolute;
   object-fit: contain;
   display: flex;
-  transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955); 
+  transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 .cards-slider-wrapper .cardCss {
   opacity: 0.7;
   transform: scale(0.8);
-  transition: opacity 300ms linear, border-color 300ms linear, background-color 300ms linear, transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955); 
+  transition: opacity 300ms linear, border-color 300ms linear,
+    background-color 300ms linear,
+    transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 /* Image */
-
-
 .cardPic {
   width: 100%;
   display: block;
- }
-
+}
 
 /* Tags*/
 
-.tags{
+.tags {
   padding-top: 2rem;
   padding-bottom: 2rem;
 
   padding-left: 2rem;
   padding-right: 2rem;
-
 }
 
+<<<<<<< HEAD
  /* Travel Tag*/
  .tags p, h1 {
-  margin: 0; padding: 0;
- }
-  
- .travelTag {
+  margin: 0;
+  padding: 0;
+}
+
+.travelTag {
   margin-bottom: 0;
   font-size: 0.75rem;
   font-weight: 500;
@@ -96,17 +92,17 @@ body * {
   margin-bottom: 1rem;
   color: rgba(0, 0, 0, 0.3);
   letter-spacing: 2px;
- }
- 
- /* Title*/
+}
 
- .title {
-  font-family: 'Lora', serif;
+/* Title*/
+
+.title {
+  font-family: "Lora", serif;
   font-weight: normal;
-  color: rgba(0,0,0,0.9);
+  color: rgba(0, 0, 0, 0.9);
   font-size: 2.25rem;
   margin-top: 0;
- }
+}
 
 /* ReamoreTag*/
 
@@ -118,18 +114,13 @@ body * {
   text-decoration: none;
   outline: none;
   color: #2196fe;
-  transition: all 0.25s ease-in; 
+  transition: all 0.25s ease-in;
 }
 .readmeTag:hover,
 .readmeTag:focus,
 .readmeTag:active {
- color: #536dfe;
+  color: #536dfe;
 }
-
-
-
-
-
 
 /* Old card desing, Do not remove yet!!
 .card {
@@ -224,27 +215,26 @@ body * {
   }
   */
 
-  .cards-slider.active-slide-0 #card-0 {
+.cards-slider.active-slide-0 #card-0 {
+  opacity: 1;
+  transform: scale(1);
+  background-color: #f3f3f3;
+  border-color: #f3f3f3;
+}
 
-    opacity: 1;
-    transform: scale(1);
-    background-color: #f3f3f3;
-    border-color: #f3f3f3; 
-  }
-  
-  .cards-slider.active-slide-0 #card-0 .details {
-      opacity: 1;
-  }
-  
-  .cards-slider.active-slide-1 #card-1 {
-    opacity: 1;
-    transform: scale(1);
-    background-color: #f3f3f3;
-    border-color: #f3f3f3; 
-  }
-  
-  .cards-slider {
-    position: relative;
-    max-width: 226px;
-    margin: 0 auto; 
-  }
+.cards-slider.active-slide-0 #card-0 .details {
+  opacity: 1;
+}
+
+.cards-slider.active-slide-1 #card-1 {
+  opacity: 1;
+  transform: scale(1);
+  background-color: #f3f3f3;
+  border-color: #f3f3f3;
+}
+
+.cards-slider {
+  position: relative;
+  max-width: 226px;
+  margin: 0 auto;
+}
