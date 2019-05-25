@@ -15,13 +15,14 @@
     "twit": "^2.2.11"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start-frontend": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "server": "nodemon ./src/Backend/index.js",
-    "start-dev": "npm-run-all -p server start",
-    "lint": ".\\node_modules\\.bin\\eslint --fix src",
-    "eject": "react-scripts eject"
+    "start-backend": "nodemon ./src/Backend/index.js",
+    "start-node": "node ./src/Backend/index.js",
+    "start-dev": "run-p start-backend start-frontend",
+    "eject": "react-scripts eject",
+    "start": "run-s build start-node"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -39,11 +40,6 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^5.16.0",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-plugin-import": "^2.17.2",
-    "eslint-plugin-jsx-a11y": "^6.2.1",
-    "eslint-plugin-react": "^7.13.0",
     "nodemon": "^1.19.0"
   },
   "proxy": "http://localhost:3001"
