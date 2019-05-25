@@ -29,7 +29,6 @@ body * {
 
 .cardCss{
   position: relative;
-
   margin-top: 2rem;
   margin-bottom: 2rem;
   margin-left: auto;
@@ -49,7 +48,6 @@ body * {
   border-bottom: 5px solid #2196fe;
  }
 
-
  /* Card*/
 
  .cards-slider-wrapper {
@@ -63,10 +61,7 @@ body * {
   transform: scale(0.8);
   transition: opacity 300ms linear, border-color 300ms linear, background-color 300ms linear, transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955); 
 }
-
 /* Image */
-
-
 .cardPic {
   width: 100%;
   display: block;
