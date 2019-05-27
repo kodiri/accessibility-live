@@ -6,7 +6,7 @@ export default function AboutUs() {
     <div className='About'>
       <h1>About Us</h1>
       <br></br>
-    <h2>Team Charlie's mission is for everybody to have a pleasant experience using public transport. 
+    <p><h2>Team Charlie's mission is for everybody to have a pleasant experience using public transport. 
       
     At Team Charlie we believe that using current transport data to inform passengers, will allow them to make informed decisions about the best route of transportation for their needs.
     We want to facilitate people with a disability to travel on public transport with ease. Accessibility Live is our signature application for improving the transport experience of people with a disability, when using transport in and around the city of London.

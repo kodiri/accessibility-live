@@ -17,6 +17,8 @@ import taxicard from "../Images/taxicard.jpg";
 import capital from "../Images/capitalcall.png";
 import community from "../Images/community.jpg";
 import nhs from "../Images/nhs.jpg";
+import redbridge from "../Images/redbridge.jpg";
+
 
 /* Concesionary */
 
@@ -30,7 +32,7 @@ import oyster from "../Images/60oyster.jpg";
 
 import scooter from "../Images/scooter.jpg";
 import cycling from "../Images/cycling.jpg";
-import shop from "../Images/shop.png";
+import shop from "../Images/shop.jpg";
 
 const data = {
     "services": [
