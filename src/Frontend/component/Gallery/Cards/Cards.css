@@ -26,7 +26,6 @@ body * {
 
 .cardCss {
   position: relative;
-
   margin-top: 2rem;
   margin-bottom: 2rem;
   margin-left: auto;
@@ -35,8 +34,9 @@ body * {
   background-color: #fff;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
 
+
   transition: all 0.25s ease-in;
-  border-bottom: 5px solid transparent;
+  border-bottom: 0px !important;
 }
 
 .cardCss:hover {
@@ -45,8 +45,7 @@ body * {
   border-bottom: 5px solid #2196fe;
 }
 
-/* Card*/
-
+ /* Card*/
 .cards-slider-wrapper {
   position: absolute;
   object-fit: contain;
@@ -60,7 +59,6 @@ body * {
     background-color 300ms linear,
     transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
-
 /* Image */
 .cardPic {
   width: 100%;
@@ -77,7 +75,6 @@ body * {
   padding-right: 2rem;
 }
 
-<<<<<<< HEAD
  /* Travel Tag*/
  .tags p, h1 {
   margin: 0;
@@ -238,10 +235,7 @@ body * {
   max-width: 226px;
   margin: 0 auto;
 }
-<<<<<<< HEAD
-=======
 a:hover {
   color: tomato;
   transition: all 0.25s ease-out;
 } */
->>>>>>> #MInior updates in Homepage
