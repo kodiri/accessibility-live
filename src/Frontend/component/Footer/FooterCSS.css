@@ -17,6 +17,20 @@
   margin-left: 1em;
   background-color: #f15a24;
   border-radius: 50%;
+  padding: 0;
+  /* color: rgba(240, 248, 255, 0.74); */
+  transition: all 0.45s linear;
+}
+
+/* .Footer .contacts a {
+  width: 10%;
+  height:auto;
+  text-align: bottom;
+} */
+
+.Footer .contacts :hover {
+  transform: scale(1.05);
+  color: rgba(240, 248, 255, 0.938);
 }
 
 .Footer .bottom {
@@ -41,6 +55,7 @@
   margin-left: 1em;
 }
 
-.Footer .fa-facebook {
-  background-color: #0f0f0f;
+
+@media only screen and (max-width: 600px) and (min-width: 400px) {
+  /* flex-direction: column; */
 }

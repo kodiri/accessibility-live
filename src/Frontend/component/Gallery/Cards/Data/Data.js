@@ -15,14 +15,14 @@ const data = {
         "_id": "2",
         "index": 1,
         "picture":  taxicard,
-        "title": "Taxicard",
+        "title": "Taxis",
         "description": "Short Description"
     },
     {
         "_id": "3",
         "index": 2,
         "picture":  taxicard,
-        "title": "Testcard",
+        "title": "Other Transport",
         "description": "Short Description"
     }
     ]

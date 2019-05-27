@@ -27,7 +27,7 @@ export default class RouteDisplayer extends Component {
           ))}
         </ul>
         <ul className="RouteDisplayer__List">
-          <h3 className="RouteDisplayer__Title">Last Updates:</h3>
+          <h3 className="RouteDisplayer__Title">Latest Updates:</h3>
           {tweets.map((tweet, index) => (
             <li className="RouteDisplayer__Message" key={index}>
               {tweet}

@@ -6,24 +6,25 @@ import Why from './Why/Why';
 import How from './How/How';
 import KeepCalm from './KeepCalm/KeepCalm';
 import MeetTheTeam from './MeetTheTeam/MeetTheTeam';
+import AboutUs from '../../component/About/AboutUs';
 
 export default function HomePage() {
   return (
     <div className="HomePage">
       <div className="HomePage__HeroPhoto">
         <div className="HomePage__HeroPhoto__Title">
-          Transforming wheels in
+          Transforming wheels into
           <br />
           wings...
         </div>
         <div className="HomePage__HeroPhoto__Subtitle">
           <p className="HomePage__HeroPhoto__Subtitle_text">
-            First app to keep you updated about all the lifts working in your area
+            The first app to keep you updated with information about the lifts working in your area
           </p>
         </div>
         <Link to="/Search">
           <button type="button" className="HomePage__HeroPhoto__Button">
-            Start now
+            Search now
           </button>
         </Link>
         <a href="#Why">
@@ -33,6 +34,7 @@ export default function HomePage() {
       <Why />
       <How />
       <KeepCalm />
+      <AboutUs />
       <MeetTheTeam />
     </div>
   );
