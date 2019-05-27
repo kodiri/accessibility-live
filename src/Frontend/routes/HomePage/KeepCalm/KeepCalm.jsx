@@ -28,9 +28,9 @@ export default function KeepCalm() {
         <img className="KeepCalm__Photo" src={guyInWheelChairImg} alt="promo app" />
         <div className="KeepCalm__Description">
           <p className="KeepCalm__Description__text">
-            We provide you with the last updates about your search, in real time. We use data from
-            twitter and TfL. If something is not working, someone will let you know. If you discover
-            a lift is not working, please be the first to let us know!
+            We provide you with the latest updates for your search, in real time. If something is not working, we will let you know. 
+            We use data from twitter, TfL and passenger feedback. If you discover a lift
+            is not working, please be the first to let us know!
           </p>
         </div>
       </div>

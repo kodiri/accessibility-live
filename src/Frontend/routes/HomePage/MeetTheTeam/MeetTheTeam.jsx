@@ -7,7 +7,6 @@ import CarlImg from './MemberPhotos/carl.jpg';
 import SuleImg from './MemberPhotos/Sule.png';
 import PelinImg from './MemberPhotos/Pelin.jpg';
 import SBImg from './MemberPhotos/SB.png';
-import GrayImg from './MemberPhotos/Grau.png';
 import WalterImg from './MemberPhotos/walter-gh.jpg';
 
 export default function MeetTheTeam() {
@@ -22,7 +21,6 @@ export default function MeetTheTeam() {
           ambition of helping to improve lives.
         </div>
         <div className="MeetTheTeam__Photos">
-          <Member name="Gray" photo={GrayImg} linkedIn="walterperezhernandez/" />
           <Member name="S.B." photo={SBImg} linkedIn="s-b-63286967/" />
           <Member name="Pelin" photo={PelinImg} linkedIn="walterperezhernandez/" />
           <Member name="Walter" photo={WalterImg} linkedIn="walterperezhernandez/" />
