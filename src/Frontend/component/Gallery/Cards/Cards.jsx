@@ -8,12 +8,12 @@ const divStyle1 = {
 };
 
 const Card = ({ service }) => {
-  const { index, picture, title, description } = service;
+  const { index, picture, title, description, tag } = service;
   return (
     <div id={`card-${index}`} className="cardCss" style={divStyle1}>
         <img src={picture} alt={title} alt="Image" className="cardPic" />
         <div className="tags">
-          <div className="travelTag"><p>Door to Door</p></div>
+          <div className="travelTag"><p>{tag}</p></div>
           <div className="title"><h1>{title}</h1></div>
           <div className="description"><p>{description}</p></div>
         </div>

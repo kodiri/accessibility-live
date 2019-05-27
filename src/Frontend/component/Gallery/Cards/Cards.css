@@ -85,11 +85,12 @@ body {
  /* Travel Tag*/
  .tags p, h1 {
   margin: 0; padding: 0;
+  font-size: 0.75rem;
+
  }
   
  .travelTag {
   margin-bottom: 0;
-  font-size: 0.75rem;
   font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 1rem;
@@ -99,7 +100,13 @@ body {
  
  /* Title*/
 
+ .description{
+  text-align: left;
+
+ }
+
 .cardCss .title {
+  text-align: left;
   font-family: 'Lora', serif;
   font-weight: normal;
   color: rgba(0,0,0,0.9);
@@ -109,12 +116,16 @@ body {
 /* ReamoreTag*/
 
 .readmeTag {
+  letter-spacing: 2px;
+  text-transform: uppercase;
   display: inline-block;
-  text-align: center;
+  font-weight: 500;
+
   margin-bottom: 2rem;
-  margin-left: 2rem;
+
   text-decoration: none;
   outline: none;
+
   color: #2196fe;
   transition: all 0.25s ease-in; 
 }
