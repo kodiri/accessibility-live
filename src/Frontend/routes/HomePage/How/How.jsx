@@ -1,14 +1,15 @@
 import React from 'react';
 import './How.css';
+import toolSvg from "./../../../Images/icons/question.svg";
 import happyGuyInWheelChairImg from '../../../Images/guy_weelchair.jpg';
 
 export default function How() {
   return (
     <div className="How">
       <div className="How__Tittle">
-        How it
+        <img src={toolSvg} className="How__Icon" alt="how icon" />How it
         <span className="How__text--gold"> works </span>
-?
+        ?
       </div>
       <div className="How__Container__Flex">
         <div className="How__List">
