@@ -8,7 +8,10 @@ export default function AboutUs() {
       <br />
       <h2>
         Team Charlie's mission is for everybody to have a pleasant experience
-        using public transport. At Team Charlie we believe that using current
+        using public transport. 
+      </h2>
+      <p>
+        At Team Charlie we believe that using current
         transport data to inform passengers, will allow them to make informed
         decisions about the best route of transportation for their needs. We
         want to facilitate people with a disability to travel on public
@@ -20,7 +23,7 @@ export default function AboutUs() {
         working lift and when a particular station is busy. We want our
         Accessibility Live application to be the leader in helping many people
         with transportation.
-      </h2>
+      </p>
     </div>
   );
 }
