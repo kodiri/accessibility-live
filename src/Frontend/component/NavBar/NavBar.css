@@ -2,8 +2,8 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
   position: fixed;
+  justify-content: flex-end;
   top: 0;
   left: 0;
   z-index: 100;
@@ -25,10 +25,11 @@
 .NavBar__Menu a {
   margin: 0;
   padding: 0;
-  display: block;
+  display: flex;
+  flex: 1;
+  align-self: flex-end;
   width: 100%;
   height: 100%;
-  flex: 1;
   text-decoration: none;
   color: rgba(255, 217, 0, 0.842);
 }
@@ -38,8 +39,8 @@
   padding: 0.5em 0;
   display: inline-block;
   font-size: 0.9em;
-  width: 20%;
-  text-align: center;
+  /* width: 20%; */
+  padding: 10px;
   text-transform: uppercase;
   font-weight: bold;
   transition: all ease-in 0.3s;
@@ -55,3 +56,63 @@
 .NavBar__Menu_Item a:hover {
   color: gold;
 }
+
+
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {
+  .NavBar{ 
+    justify-content: center;
+    display: flex;
+  } 
+  .NavBar__Menu_Item {
+    font-size: 0.5em;
+    justify-content: flex-end;
+  }
+} */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {
+  .NavBar{ 
+    justify-content: center;
+    display: flex;
+  }
+  .NavBar__Menu_Item {
+    font-size: 0.6em;
+    justify-content: flex-end;
+  }
+}  */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {
+  .NavBar{ 
+    justify-content: center;
+    display: flex;
+  }
+  .NavBar__Menu_Item {
+    font-size: 0.7em;
+    justify-content: flex-end;
+  }
+}  */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {
+  .NavBar{ 
+    justify-content: center;
+    display: flex;
+  }
+  .NavBar__Menu_Item {
+    font-size: 0.8em;
+    justify-content: flex-end;
+  }
+}  */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {
+  .NavBar{ 
+    justify-content: center;
+    display: flex;
+  }
+  .NavBar__Menu_Item {
+    font-size: 0.9em;
+    justify-content: flex-end;
+  }
+} */
