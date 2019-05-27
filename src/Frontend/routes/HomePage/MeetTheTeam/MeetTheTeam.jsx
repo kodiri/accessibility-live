@@ -12,13 +12,13 @@ import WalterImg from './MemberPhotos/walter-gh.jpg';
 export default function MeetTheTeam() {
   return (
     <div className="MeetTheTeam">
-      <div className="MeetTheTeam__Tittle">
+      <div className="MeetTheTeam__Title">
         <h2>Meet the Team</h2>
       </div>
       <div className="MeetTheTeam__Flex__Container">
         <div className="MeetTheTeam__Description">
-          Charlie Team is based in London, UK. It a team of developers with a diverse background but
-          with big aim to help and improve the live of our world.
+          Charlie Team is a London based company in the U.K. It is a team of developers with a diverse background, with the dedication and
+          ambition of helping to improve lives.
         </div>
         <div className="MeetTheTeam__Photos">
           <Member name="Gray" photo={GrayImg} />

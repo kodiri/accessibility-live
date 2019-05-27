@@ -1,14 +1,27 @@
 .UsefulLinks {
   background-color: #fdcf32;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
   height: 200px;
+  margin: auto
 }
 
-.UsefulLinks a {
- flex-wrap: wrap-reverse;
- margin-left: 20%;
- font-size: 20px;
+.innerUsefulLinks {
+  flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
+
+
+.innerUsefulLinks a {
+ margin: auto;
+ font-size: 20px;
+ padding-top: 20px;
+}
+
+.Title {
+  font-size: 25px;
+  font-weight: 700;
+  background-color: #fdcf32;
+  padding: 1.4%;
+  padding-top: 10px;
+} 
 
