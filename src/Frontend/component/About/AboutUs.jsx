@@ -1,9 +1,9 @@
-import React from 'react';
-import './AboutUs.css';
+import React from "react";
+import "./AboutUs.css";
 
 export default function AboutUs() {
   return (
-    <div className='About'>
+    <div className="About">
       <h1>About Us</h1>
       <br></br>
     <p><h2>Team Charlie's mission is for everybody to have a pleasant experience using public transport. 

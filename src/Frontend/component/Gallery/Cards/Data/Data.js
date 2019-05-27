@@ -142,13 +142,6 @@ const data = {
         "description": "Short Description"
     },
 	{
-        "_id": "16",
-        "index": 15,
-        "picture":  taxicard,
-        "title": "Testcard",
-        "description": "Short Description"
-    },
-	{
         "_id": "17",
         "index": 16,
         "picture": blue,
