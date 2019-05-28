@@ -27,7 +27,6 @@ export default function Details() {
                     src={DetailsChart}
                     />
                 </div>
-                <img src={DetailsChart} />
             </div>
         </div>
     );
