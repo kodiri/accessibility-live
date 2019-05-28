@@ -2,7 +2,7 @@
   width: 100%;
   padding: 1em;
   background-color: #0f0f0f;
-  color: gold;
+  color: #f15a24;
 }
 
 .Footer .contacts {
@@ -15,8 +15,22 @@
   width: 15%;
   height: auto;
   margin-left: 1em;
-  background-color: gold;
+  background-color: #f15a24;
   border-radius: 50%;
+  padding: 0;
+  /* color: rgba(240, 248, 255, 0.74); */
+  transition: all 0.45s linear;
+}
+
+/* .Footer .contacts a {
+  width: 10%;
+  height:auto;
+  text-align: bottom;
+} */
+
+.Footer .contacts :hover {
+  transform: scale(1.05);
+  color: rgba(240, 248, 255, 0.938);
 }
 
 .Footer .bottom {
@@ -41,14 +55,7 @@
   margin-left: 1em;
 }
 
-/* .Twitter-logo
-<div>Icons made by <a href="https://www.flaticon.com/authors/bogdan-rosu" title="Bogdan Rosu">Bogdan Rosu</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 
-.Facebook-logo
-<div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-
-.Gmail-logo
-<div>Icons made by <a href="https://www.flaticon.com/authors/icomoon" title="Icomoon">Icomoon</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-
-.Github-logo
-<div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> */
+@media only screen and (max-width: 600px) and (min-width: 400px) {
+  /* flex-direction: column; */
+}

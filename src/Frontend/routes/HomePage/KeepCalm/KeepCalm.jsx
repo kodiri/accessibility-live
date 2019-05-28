@@ -1,28 +1,36 @@
 import React from 'react';
 import './KeepCalm.css';
 import guyInWheelChairImg from '../../../Images/laptop-smatphone-mockup.jpg';
+import googleAppStoreDownload from '../../../Images/Google-Play-Store-Download-APK.webp';
 
 export default function KeepCalm() {
   return (
     <div className="KeepCalm">
-      <div className="KeepCalm__Tittle">
+      <div className="KeepCalm__Title">
         <h2>
           Keep Calm
           <br />
           &
           <br />
           stay t
-          <span className="KeepCalm__text--underline">une</span>
+          <span className="KeepCalm__text--underline">uned</span>
 !
         </h2>
+        <a
+          className="a__button__apk"
+          href="https://mega.nz/#!sZcWnALI!fMMKlbXC3gOAbtfCWMoholqUcE-UDL7mtGNIFGkJWII"
+          target="_blank"
+        >
+          <img src={googleAppStoreDownload} alt="download button" className="Button__Download" />
+        </a>
       </div>
       <div className="KeepCalm__Container__Flex">
-        <img className="KeepCalm__Photo" src={guyInWheelChairImg} alt="wheelchair vs stairs" />
+        <img className="KeepCalm__Photo" src={guyInWheelChairImg} alt="promo app" />
         <div className="KeepCalm__Description">
           <p className="KeepCalm__Description__text">
-            We provide you in real time the last updates about your search getting data from twitter
-            and TfL. If something is not working someone will let you know and if you were surprised
-            by a not working lift, please be the first to let know what is going on!
+            We provide you with the latest updates for your search, in real time. If something is not working, we will let you know. 
+            We use data from twitter, TfL and passenger feedback. If you discover a lift
+            is not working, please be the first to let us know!
           </p>
         </div>
       </div>

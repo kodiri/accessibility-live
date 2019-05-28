@@ -30,10 +30,31 @@
 
 .Why__Photo {
   flex: 1;
-  max-width: 500px;
   height: auto;
   max-height: 300px;
   object-fit: cover;
   -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
   clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+.Why__Icon{
+  height: 2.5em;
+}
+
+@media only screen and (max-width: 1000px) {
+  .Why {
+    pad: 1em 1em;
+    height: auto;
+  }
+  .Why__Container__Flex {
+    flex-direction: column;
+  }
+  .Why__Photo {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+  }
+  .Why__Tittle {
+    margin-bottom: 1em;
+  }
 }

@@ -1,5 +1,13 @@
-
 .About {
    width: 100%;
    padding: 1.4%;
 }
+
+.About p {
+   font-size: 20px;
+}
+
+@media only screen and 
+(max-width: 600px) and (min-width: 400px) {
+       /* flex-direction: column; */
+} 
