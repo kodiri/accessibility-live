@@ -14,7 +14,7 @@ import tramlink from "../Images/tramlink.jpg";
 
 import dial from "../Images/diala.jpg";
 import taxicard from "../Images/taxicard.jpg";
-import capital from "../Images/capitalcall.png";
+import capital from "../Images/capitalcall.jpg";
 import community from "../Images/community.jpg";
 import nhs from "../Images/nhs.jpg";
 import redbridge from "../Images/redbridge.jpg";

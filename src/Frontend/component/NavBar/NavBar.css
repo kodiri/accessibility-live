@@ -1,56 +1,92 @@
+*{
+  margin: 0;
+}
+.app {
+  font-family: Helvetica, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Navigation Bar */
+
 .NavBar {
+  color: wheat;
+  position: fixed;
+  background-color: rgb(15, 15, 15);
+  font-size: 1rem;
+  z-index: 100;
+
+  /*My addition: */
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+}
+  
+  /* Removed:
+  
   width: 100%;
   display: flex;
   flex-direction: row;
-  position: fixed;
   justify-content: flex-end;
   top: 0;
   left: 0;
-  z-index: 100;
-  background-color: rgb(15, 15, 15);
-  font-size: 1rem;
-  color: wheat;
-}
+  */
+
 .NavBar__Logo {
   position: fixed;
   left: 1em;
   height: 2em;
+
+  /*My addition: */
+  display: block;
+  float: left;
+  padding: 10px 20px;
 }
+
+
+/* Menu Elements */
+
 .NavBar__Menu {
-  flex: 0.5;
   width: 50%;
   height: 100%;
+  /* Removed:
+      flex: 0.5;
+  */
 }
 
 .NavBar__Menu a {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex: 1;
-  align-self: flex-end;
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
   color: rgba(255, 217, 0, 0.842);
+  /* Removed:
+      display: flex;
+      align-self: flex-end;
+      text-decoration: none;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      flex: 1;
+
+  */
+}
+
+/* I Added this*/
+.NavBar .NavBar__Menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
 }
 
 .NavBar__Menu_Item {
-  box-sizing: border-box;
-  padding: 0.5em 0;
-  display: inline-block;
   font-size: 0.9em;
-  /* width: 20%; */
-  padding: 10px;
+  width: 20%; 
   text-transform: uppercase;
   font-weight: bold;
-  transition: all ease-in 0.3s;
-}
 
-.NavBar__Menu_Item:hover {
-  color: gold;
-  background-color: rgb(24, 24, 24);
-  border-bottom: solid 3px gold;
-  padding: calc(0.5em - 3px) 0;
+/* Removed:
+  box-sizing: border-box;
+  padding: 0.5em 0;
+  transition: all ease-in 0.3s;
+  padding: 10px;
+  */
 }
 
 .NavBar__Menu_Item a:hover {
@@ -58,61 +94,124 @@
 }
 
 
-/* Extra small devices (phones, 600px and down) */
-/* @media only screen and (max-width: 600px) {
-  .NavBar{ 
-    justify-content: center;
-    display: flex;
-  } 
-  .NavBar__Menu_Item {
-    font-size: 0.5em;
-    justify-content: flex-end;
-  }
-} */
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (min-width: 600px) {
-  .NavBar{ 
-    justify-content: center;
-    display: flex;
-  }
-  .NavBar__Menu_Item {
-    font-size: 0.6em;
-    justify-content: flex-end;
-  }
-}  */
+.NavBar__Menu_Item:hover {
+  color: gold;
+  background-color: rgb(24, 24, 24);
+  /* Removed: 
+  border-bottom: solid 3px gold;
+  */
+}
 
-/* Medium devices (landscape tablets, 768px and up) */
-/* @media only screen and (min-width: 768px) {
-  .NavBar{ 
-    justify-content: center;
-    display: flex;
-  }
-  .NavBar__Menu_Item {
-    font-size: 0.7em;
-    justify-content: flex-end;
-  }
-}  */
 
-/* Large devices (laptops/desktops, 992px and up) */
-/* @media only screen and (min-width: 992px) {
-  .NavBar{ 
-    justify-content: center;
-    display: flex;
-  }
-  .NavBar__Menu_Item {
-    font-size: 0.8em;
-    justify-content: flex-end;
-  }
-}  */
+/* The rest is code that i did on top, to get the Hamburger done */
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-/* @media only screen and (min-width: 1200px) {
-  .NavBar{ 
-    justify-content: center;
-    display: flex;
-  }
+/* Links */
+.NavBar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+/* Links Position */
+
+.NavBar li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+/* Hamburger position */
+
+.NavBar .Menu_Icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+/* Hamburger */
+
+.NavBar .Menu_Icon .Hamburger {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.NavBar .Menu_Icon .Hamburger:before {
+  top: 5px;
+}
+
+.NavBar .Menu_Icon .Hamburger:after {
+  top: -5px;
+}
+
+/*Animation */
+
+.NavBar .Menu_Icon .Hamburger:before,
+.NavBar .Menu_Icon .Hamburger:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+
+/* Display elements */
+
+.NavBar .Menu_Button {
+  display: none;
+}
+
+.NavBar .Menu_Button:checked ~ .NavBar__Menu {
+  max-height: 240px;
+}
+
+.NavBar .Menu_Button:checked ~ .Menu_Icon .Hamburger {
+  background: transparent;
+}
+
+.NavBar .Menu_Button:checked ~ .Menu_Icon .Hamburger:before {
+  transform: rotate(-45deg);
+}
+
+.NavBar .Menu_Button:checked ~ .Menu_Icon .Hamburger:after {
+  transform: rotate(45deg);
+}
+
+.NavBar .Menu_Button:checked ~ .Menu_Icon:not(.steps) .Hamburger:before,
+.NavBar .Menu_Button:checked ~ .Menu_Icon:not(.steps) .Hamburger:after {
+  top: 0;
+}
+
+/* Show only when the width = 768px or less*/
+
+@media (min-width: 768px) {
+
   .NavBar__Menu_Item {
-    font-size: 0.9em;
-    justify-content: flex-end;
+      display: inline-block;
   }
-} */
+  
+  .NavBar li {
+    float: left;
+  }
+  .NavBar li a {
+    padding: 20px 30px;
+  }
+  .NavBar .NavBar__Menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .NavBar .Menu_Icon {
+    display: none;
+  }
+}
