@@ -31,33 +31,36 @@ class Gallery extends Component {
     const { services, service } = this.state;
     return (
       <div className="layout">
-        <div className="buttons">
-          <button
-            onClick={() => this.prevCard()}
-            disabled={service.index === 0}>Prev</button>
-          <button
-            onClick={() => this.nextCard()}
-            disabled={service.index === data.services.length - 1}>Next</button>
-        </div>
-        <div className="row">
 
+        <div className="row">
           <div className={`cards-slider active-slide-${service.index}`}>
+          <div className="buttons">
+            <button
+              className="previousButton"
+              onClick={() => this.prevCard()}
+              disabled={service.index === 0}><i class="fas fa-chevron-circle-left"></i></button>
+            <button
+              className="nextButton"
+              onClick={() => this.nextCard()}
+              disabled={service.index === data.services.length - 1}><i class="fas fa-chevron-circle-right"></i></button>
+          </div>
             <div className="cards-slider-wrapper" style={{
               'transform': `translateX(-${service.index * (100 / services.length)}%)`
             }}>
-                  {
-                    services.map(service => 
-                    <div className="column">
-                        <Card key={service._id} service={service}></Card>
-                    </div>
-                    )
-                  }
-                </div>
-              </div>
+              {
+                services.map(service =>
+                  <div className="column">
+                    <Card key={service._id} service={service}></Card>
+                  </div>
+                )
+              }
+
             </div>
           </div>
-          );
-        }
-      }
-      
-      export default Gallery;
+        </div>
+      </div>
+    );
+  }
+}
+
+export default Gallery;

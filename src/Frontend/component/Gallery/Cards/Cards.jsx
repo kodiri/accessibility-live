@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './Cards.css'
+import {Link} from 'react-router-dom';
 
 const divStyle1 = {
   width: '360px',
@@ -8,7 +9,7 @@ const divStyle1 = {
 };
 
 const Card = ({ service }) => {
-  const { index, picture, title, description, tag } = service;
+  const { index, picture, title, description, tag, pageLink } = service;
   return (
     <div id={`card-${index}`} className="cardCss" style={divStyle1}>
         <img src={picture} alt={title} alt="Image" className="cardPic" />
@@ -17,7 +18,7 @@ const Card = ({ service }) => {
           <div className="title"><h1>{title}</h1></div>
           <div className="description"><p>{description}</p></div>
         </div>
-        <a href="#0" className="readmeTag">Read More</a>
+        <Link to={pageLink} className="readmeTag">Read More</Link>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import '../../../css/Post.css';
 
 // class component
 class Bus extends Component {

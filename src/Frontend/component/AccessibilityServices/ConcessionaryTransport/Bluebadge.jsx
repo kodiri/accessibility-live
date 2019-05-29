@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Post.css';
+import '../../../css/Post.css';
 
 // class component
 class Bluebadge extends Component {
@@ -77,4 +77,4 @@ class Bluebadge extends Component {
     }
 }
 
-export default App;
+export default Bluebadge;
