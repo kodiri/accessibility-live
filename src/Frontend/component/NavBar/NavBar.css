@@ -17,7 +17,6 @@
 
   /*My addition: */
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-  position: fixed;
   width: 100%;
 }
   
@@ -31,17 +30,20 @@
   left: 0;
   */
 
-.NavBar__Logo {
-  position: fixed;
+  .NavBar__Logo {
+  /* position: fixed; */
   left: 1em;
   height: 2em;
-
-  /*My addition: */
-  display: block;
+  top: 0;
   float: left;
-  padding: 10px 20px;
+  /* position: absolute; */
+  margin-top: -70px;
+  margin-left: 30px;
 }
 
+img{
+  width: 40px;
+}
 
 /* Menu Elements */
 
@@ -64,7 +66,6 @@
       margin: 0;
       padding: 0;
       flex: 1;
-
   */
 }
 

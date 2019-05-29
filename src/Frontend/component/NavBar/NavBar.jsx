@@ -1,13 +1,13 @@
 import React from 'react';
 import './NavBar.css';
 import { Link } from 'react-router-dom';
+import logo from '../../Images/charlie-team-logo.svg';
 
 function NavBar() {
   return (
     <div className='app'>
       <div className="NavBar">
-        <a href="" className="NavBar__Logo"> Logo goes here
-            </a>
+      <a href="" className="NavBar__Logo"><img src={logo} alt="logo charlie team"/></a>
 
         <input
           className="Menu_Button"
