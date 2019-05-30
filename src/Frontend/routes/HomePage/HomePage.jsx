@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './HomePage.css';
 // Components
 import HeroImg from './HeroImg/HeroImg';
@@ -16,8 +15,8 @@ export default function HomePage() {
       <Why />
       <How />
       <KeepCalm />
-      <AboutUs />
       <MeetTheTeam />
+      <AboutUs />
     </div>
   );
 }

@@ -1,31 +1,81 @@
 import React from 'react';
 import './MeetTheTeam.css';
-import Member from './Member/Member';
-import teamSvg from "./../../../Images/icons/group.svg";
-// Images
-import CarlImg from './MemberPhotos/carl.jpg';
-import SuleImg from './MemberPhotos/Sule.png';
-import PelinImg from './MemberPhotos/Pelin.jpg';
-import SBImg from './MemberPhotos/SB.png';
-import WalterImg from './MemberPhotos/walter-gh.jpg';
 
 export default function MeetTheTeam() {
   return (
     <div className="MeetTheTeam">
-      <div className="MeetTheTeam__Title">
-        <h2><img src={teamSvg} className="MeetTheTeam__Icon" alt="how icon" />Meet the Team</h2>
-      </div>
-      <div className="MeetTheTeam__Flex__Container">
-        <div className="MeetTheTeam__Description">
-          Charlie Team is a London based company in the U.K. It is a team of developers with a diverse background, with the dedication and
-          ambition of helping to improve lives.
-        </div>
-        <div className="MeetTheTeam__Photos">
-          <Member name="S.B." photo={SBImg} linkedIn="s-b-63286967/" />
-          <Member name="Pelin" photo={PelinImg} linkedIn="walterperezhernandez/" />
-          <Member name="Walter" photo={WalterImg} linkedIn="walterperezhernandez/" />
-          <Member name="Sule" photo={SuleImg} linkedIn="walterperezhernandez/" />
-          <Member name="Carl" photo={CarlImg} linkedIn="walterperezhernandez/" />
+      <div id="position">
+        <div id="row">
+          <div class="tittle">
+            <h1>MEET THE TEAM</h1>
+          </div>
+          <div id="column">
+            <div class="cube shar">
+              <div class="member">
+                <div className='name'>Sharleen</div>
+                <div className='surname'>Braham</div>
+              </div>
+              <div class="whiteBorder"></div>
+              <div class="opacity"></div>
+              <div class="linkedinProfile">
+                <ul>
+                  <li><a href=""><span class="fab fa-linkedin"></span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="cube pelin">
+              <div class="member">
+                <div className='name'>Pelin</div>
+                <div className='surname'>Diskan</div>
+              </div>
+              <div class="whiteBorder"></div>
+              <div class="opacity"></div>
+              <div class="linkedinProfile">
+                <ul>
+                  <li><a href=""><span class="fab fa-linkedin"></span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="cube walter">
+              <div class="member">
+                <div className='name'>Walter</div>
+                <div className='surname'>Perez</div>
+              </div>
+              <div class="whiteBorder"></div>
+              <div class="opacity"></div>
+              <div class="linkedinProfile">
+                <ul>
+                  <li><a href="https://www.linkedin.com/in/walterperezhernandez/"><span class="fab fa-linkedin"></span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="cube sule">
+              <div class="member">
+                <div className='name'>Suleman</div>
+                <div className='surname'>Tunkara</div>
+              </div>
+              <div class="whiteBorder"></div>
+              <div class="opacity"></div>
+              <div class="linkedinProfile">
+                <ul>
+                  <li><a href=""><span class="fab fa-linkedin"></span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="cube carl">
+              <div class="member">
+                <div className='name'>Carl</div>
+                <div className='surname'>Cross</div>
+              </div>
+              <div class="whiteBorder"></div>
+              <div class="opacity"></div>
+              <div class="linkedinProfile">
+                <ul>
+                  <li><a href=""><span class="fab fa-linkedin-in"></span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

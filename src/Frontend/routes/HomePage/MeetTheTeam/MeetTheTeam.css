@@ -1,54 +1,202 @@
-.MeetTheTeam {
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  padding: 2em 10%;
-  background-color: rgba(255, 68, 0, 0.884);
-  color: white;
-  background-image: linear-gradient(
-    135deg,
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 0.3)
-  );
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+ * {
+	 outline-width: 0;
+	 font-family: 'Roboto';
 }
-.MeetTheTeam__Title h2 {
-  font-size: 2em;
+ body {
+	 background: #eee;
 }
 
-.MeetTheTeam__Flex__Container {
-  display: flex;
-  width: 100%;
-  height: auto;
+
+ #position {
+	 height: 100vh;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+}
+/* Grids */
+
+ #row {
+	 width: 650px;
+	 display: flex;
+	 flex-direction: column;
+}
+ #column {
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 flex-wrap: wrap;
 }
 
-.MeetTheTeam__Description {
-  flex: 1;
-  display: block;
-  margin-right: 2em;
-  color: rgba(255, 255, 255, 0.74);
+/* Tittle */
+
+ .tittle {
+	 text-align: center;
 }
-.MeetTheTeam__Photos {
-  flex: 3;
-  display: grid;
-  padding: 1em;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+ .tittle h1 {
+	 font-size:40px;
+	 font-weight: 400;
+	 position: relative;
+	 margin-bottom: 70px;
 }
 
-.MeetTheTeam__Icon{
-  height: 2em;
-  padding-right: 1em;
+/* ---- Tittle ----- */
+ .tittle h1:before, .tittle h1:after {
+	 content: "";
+	 height: 1px;
+	 width: 150px;
+	 background: #aaa;
+	 display: block;
+	 position: absolute;
+	 top: 49%;
+	 
+}
+ .tittle h1:before {
+	 left: 0;
+}
+ .tittle h1:after {
+	 right: 0;
 }
 
-@media only screen and (max-width: 700px) {
-  .MeetTheTeam__Flex__Container {
-    flex-direction: column;
-  }
-  .MeetTheTeam__Photos {
-    flex: 1;
-  }
+.shar {
+  background: url('./MemberPhotos/SB.png') center;
+}
+ .pelin {
+	 background: url('./MemberPhotos/Pelin.jpg') center;
+}
+ .walter {
+	 background: url('./MemberPhotos/walter-gh.jpg') center;
+}
+ .sule {
+	 background: url('./MemberPhotos/Sule.png') center;
+}
+ .carl {
+	 background: url('./MemberPhotos/carl.jpg') center;
 }
 
-@media only screen and (max-width: 600px) and (min-width: 400px) {
-  /* flex-direction: column; */
+ .cube {
+	 height: 200px;
+	 width: 200px;
+	 background-size: cover;
+	 border: 5px solid #fff;
+	 box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3), 0 2px 3px rgba(0, 0, 0, 0.1);
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 position: relative;
+	 margin-right: 10px;
+	 margin-bottom: 10px;
+	 margin-left: 10px;
+
+}
+ .cube .member {
+	 position: absolute;
+	 bottom: 15px;
+	 left: 15px;
+	 text-shadow: 0 1px 3px #000;
+	 z-index: 3;
+}
+ .cube .member .name {
+	 font-size: 16px;
+	 color: #fff;
+	 margin: 0;
+	 user-select: none;
+}
+ .cube .member .surname {
+	 color: #fff;
+	 margin: 0;
+	 font-size: 14px;
+	 user-select: none;
+}
+ .cube .linkedinProfile {
+	 width: 100%;
+	 height: 100%;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 position: relative;
+	 flex-direction: column;
+	 opacity: 0;
+	 transition: 0.5s ease;
+	 z-index: 2;
+	 
+}
+ .cube .linkedinProfile ul {
+	 padding: 0;
+	 margin: 0 0 55px 0;
+	 cursor: default;
+	 text-align: center;
+	 
+}
+ .cube .linkedinProfile ul li {
+	 list-style: none;
+	 display: inline-block;
+	 margin: 0 11.05px 10px 11.05px;
+	 top: 40px;
+	 position: relative;
+	 opacity: 0;
+	 transition: 0.3s ease;
+}
+ .cube .linkedinProfile ul li a {
+	 display: block;
+	 color: #fff;
+	 font-size: 20px;
+	 width: 42px;
+	 height: 42px;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 border-radius: 5px;
+	 transition: 0.3s ease;
+	 text-decoration: none;
+}
+ .cube .linkedinProfile ul li a:hover {
+	 background: rgba(255, 255, 255, 0.2);
+	 
+}
+ .cube:hover .linkedinProfile {
+	 opacity: 1;
+}
+ .cube:hover .linkedinProfile li {
+	 top: 15px;
+	 opacity: 1;
+	 transition: 0.7s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+ .cube:hover .linkedinProfile .name {
+	 top: 0;
+}
+ .cube:hover .linkedinProfile .surname {
+	 top: 10px;
+}
+ .cube:hover .whiteBorder {
+	 width: 90%;
+	 height: 90%;
+	 opacity: 1;
+}
+ .cube:hover .opacity {
+	 opacity: 1;
+}
+ .cube:last-child, .cube:nth-child(3) {
+	 margin-right: 0;
+}
+ .opacity {
+	 background: rgba(38, 50, 56, 0.85);
+	 height: 100%;
+	 width: 100%;
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 opacity: 0;
+	 transition: 0.3s ease;
+}
+ .whiteBorder {
+	 width: 100%;
+	 height: 100%;
+	 position: absolute;
+	 border: 1px solid #fff;
+	 z-index: 1;
+	 opacity: 0;
+	 transition: 0.5s ease;
 }
