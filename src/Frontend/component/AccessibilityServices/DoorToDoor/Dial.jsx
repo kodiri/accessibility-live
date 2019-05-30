@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import './Post.css';
+import '../../../css/Post.css';
 
-// class component
 class Dial extends Component {
 
   render() {
