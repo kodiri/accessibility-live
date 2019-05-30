@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import '../../../css/Post.css';
 
-// class component
 class Tramlink extends Component {
 
   render() {
