@@ -9,6 +9,7 @@ import AboutPage from './routes/AboutPage';
 //Components
 import NavBar from './component/NavBar/NavBar';
 import Footer from './component/Footer/Footer_get';
+
 class App extends Component {
   constructor() {
     super();

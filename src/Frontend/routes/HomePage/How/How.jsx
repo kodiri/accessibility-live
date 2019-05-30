@@ -5,7 +5,7 @@ import happyGuyInWheelChairImg from '../../../Images/guy_weelchair.jpg';
 export default function How() {
   return (
     <div className="How">
-      <div className="How__Tittle">
+      <div className="How__Title">
         How it
         <span className="How__text--gold"> works </span>
 ?
@@ -22,7 +22,7 @@ export default function How() {
           </p>
           <p className="How__List__Item">
             <span className="How__List__Item--big">3. </span>
-            Click on Search! And start your route!
+            Click on Search! And start your journey planning!
           </p>
         </div>
         <img className="How__Photo" src={happyGuyInWheelChairImg} alt="wheelchair vs stairs" />

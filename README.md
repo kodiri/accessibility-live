@@ -5,7 +5,7 @@ Message List
 @author S Braham [10:09 AM]
 Accessibility Live - Readme.md 
 
-#### [Contributors](#contributor)|
+#### [Contributors](#contributor)
 
 - Carl Cross
 - Sule Tunkara
@@ -14,7 +14,7 @@ Accessibility Live - Readme.md
 - Sharleen Braham
 
 # </a> Team Charlie
-#### [Introduction](#intro)|
+#### [Introduction](#intro)
 [Scope](#scope)|
 [Trello Board](#trello) |
 [Stack](#stack) |
@@ -24,9 +24,11 @@ Accessibility Live - Readme.md
 [Your local machine environment](#howto)|
 [Useful tutorials](#tutorials)|
 [Useful links](#useful) <br>
-### <a name="intro"></a>Introduction :
-Website : [Transport for London](https://tfl.gov.uk/)
-The transport for London website provides people who wish to travel on public transport, with an option to plan their journey. Passengers with disabiities are very important passengers who require accurate information when planning their journey.
+
+
+### <a name="intro"></a>Introduction : |Project link| https://accessibilitylive.herokuapp.com/ |
+Website : [Transport for London]
+Passenger transport in and around London can be assisted by Transport for London website (https://tfl.gov.uk/), which provides people who wish to travel on public transport, with an option to plan their journey. Passengers with disabilities are very important passengers who require accurate information when planning their journey.
 Currently, people with a disability are not able to determine whether key facilities, such as a lift, are functioning at a certain station. Neither are they able to know if the stations they plan to use are busy.  
 Thus, Accessibility live is a website where pertinent information that is useful to such important passengers will be readily available.
 A passenger with a disability will be able to easily plan their journey with current facilities, popular times and other services for a station being presented to them.
@@ -125,12 +127,12 @@ Please add here if you know any for the stack mentioned above...
 https://github.com/kodiri/accessibility-live
 
 **Summary of all ideas proposed for the project:**
-Ideas proposed as a project included:
-Create an option for filtering YouTube videos that are less than 5 or 10 minutes in length.
-A website/Application for pollution.
-A website/Application for cocktail making
-A template for e-commerce shopping
-Geo location
+-Ideas proposed as a project included:
+-Create an option for filtering YouTube videos that are less than 5 or 10 minutes in length.
+-A website/Application for pollution.
+-A website/Application for cocktail making
+-A template for e-commerce shopping
+-Geo location
 
 Collapse
 

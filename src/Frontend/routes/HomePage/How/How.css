@@ -6,7 +6,7 @@
   color: aliceblue;
   background-color: #1d1c1c;
 }
-.How__Tittle {
+.How__Title {
   width: 100%;
   font-size: 2em;
 }
@@ -22,8 +22,8 @@
   margin-right: 2em;
 }
 
-.How__List__Item {
-}
+/* .How__List__Item {
+} */
 
 .How__List__Item--big {
   font-size: 2em;

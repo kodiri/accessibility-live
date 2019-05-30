@@ -67,8 +67,8 @@
   color: rgb(255, 255, 255);
   font-weight: bold;
 }
-.RouteChecker__Button:hover {
+/* .RouteChecker__Button:hover {
   cursor: pointer;
   background-color: rgb(219, 187, 6);
   color: rgb(221, 217, 217);
-}
+} */
