@@ -4,10 +4,11 @@
   min-height: 100vh;
   height: auto;
   padding: 1em 1em;
-  background-color: #ffffff;
+  /*background-color: #ffffff;*/
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 .KeepCalm__Title {
   flex: 1;
@@ -27,19 +28,26 @@
   color: rgba(0, 0, 0, 0.8);
   font-size: 1.5em;
   text-align: center;
+
+  font-family: "Helvetica Neue";
+
 }
 
 .Button__Download {
+  
   flex: 0.5;
   width: 100%;
   height: auto;
   margin: 0 auto;
   border-radius: 10px;
+
 }
 
 .KeepCalm__text--underline {
   font-size: 1em;
-  border-bottom: solid 3px #7a7a7a;
+  font-family: "Helvetica Neue";
+
+  
 }
 
 .KeepCalm__Container__Flex {
@@ -49,17 +57,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 .KeepCalm__Description {
   flex: 1;
   margin-right: 2em;
+  
 }
 
 .KeepCalm__Description__text {
   font-size: 0.8em;
-  padding-left: 1em;
+  padding-left: 2em;
   margin-left: 1em;
+  font-family: "Helvetica Neue";
+
+  text-align: justify;
+
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 .KeepCalm__Photo {
