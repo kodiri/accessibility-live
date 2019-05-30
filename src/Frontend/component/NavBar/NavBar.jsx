@@ -5,25 +5,36 @@ import logo from '../../Images/charlie-team-logo.svg';
 
 function NavBar() {
   return (
-    <div className="NavBar">
-      <img src={logo} alt="logo charlie team" className="NavBar__Logo" />
-      <div className="NavBar__Menu">
-        <div className="NavBar__Menu_Item">
-          <Link to="/">Home</Link>
-        </div>
+    <div className='app'>
+      <div className="NavBar">
+      <a href="" className="NavBar__Logo"><img src={logo} alt="logo charlie team"/></a>
 
-        <div className="NavBar__Menu_Item">
-          <Link to="/Search">Search</Link>
-        </div>
+        <input
+          className="Menu_Button"
+          type="checkbox"
+          id="Menu_Button"
+        />
 
-        <div className="NavBar__Menu_Item">
-          <Link to="/Details">Details</Link>
-        </div>
-        <div className="NavBar__Menu_Item">
-          <Link to="/AboutUs">About</Link>
-        </div>
+        <label
+          className="Menu_Icon"
+          for="Menu_Button">
+          <span className="Hamburger"></span>
+        </label>
+        
+        <ul className="NavBar__Menu">
+          <div className="NavBar__Menu_Item"><li><Link to="/">Home</Link></li></div>
+          <div className="NavBar__Menu_Item"><li><Link to="/Search">Search</Link></li></div>
+          <div className="NavBar__Menu_Item"><li><Link to="/Details">Details</Link></li></div>
+          <div className="NavBar__Menu_Item"><li><a href="#Contact">Contact</a></li></div>
+        </ul>
       </div>
     </div>
   );
 }
+
 export default NavBar;
+
+/* 
+import logo from '../../Images/charlie-team-logo.svg';
+Code for the logo <a href="" className="NavBar__Logo"><img src={logo} alt="logo charlie team"/></a>
+*/

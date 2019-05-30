@@ -38,3 +38,24 @@
   transform: scale(1.05);
   color: rgba(240, 248, 255, 0.938);
 }
+
+@media only screen and (max-width: 700px) {
+  .Member__Img {
+    max-width: 50px;
+    width: auto;
+    margin: 0 auto;
+    display: block;
+    border-radius: 50%;
+    box-shadow: 5px 10px 0 0 rgb(190, 56, 6);
+    transition: all 0.3s linear;
+  }
+
+  .MeetTheTeam__Photos {
+    flex: 1;
+  }
+  
+  .MeetTheTeam__Description {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+}

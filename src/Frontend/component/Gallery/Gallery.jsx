@@ -32,26 +32,29 @@ class Gallery extends Component {
     return (
       <div className="layout">
 
-        <div className="carousel">
+        <div className="row">
+          <div className={`cards-slider active-slide-${service.index}`}>
           <div className="buttons">
             <button
+              className="previousButton"
               onClick={() => this.prevCard()}
-              disabled={service.index === 0}>Prev</button>
+              disabled={service.index === 0}><i class="fas fa-chevron-circle-left"></i></button>
             <button
+              className="nextButton"
               onClick={() => this.nextCard()}
-              disabled={service.index === data.services.length - 1}>Next</button>
+              disabled={service.index === data.services.length - 1}><i class="fas fa-chevron-circle-right"></i></button>
           </div>
-          <div className="page">
-            <div className="col">
-              <div className={`cards-slider active-slide-${service.index}`}>
-                <div className="cards-slider-wrapper" style={{
-                  'transform': `translateX(-${service.index * (100 / services.length)}%)`
-                }}>
-                  {
-                    services.map(service => <Card key={service._id} service={service} />)
-                  }
-                </div>
-              </div>
+            <div className="cards-slider-wrapper" style={{
+              'transform': `translateX(-${service.index * (100 / services.length)}%)`
+            }}>
+              {
+                services.map(service =>
+                  <div className="column">
+                    <Card key={service._id} service={service}></Card>
+                  </div>
+                )
+              }
+
             </div>
           </div>
         </div>

@@ -14,6 +14,7 @@
 .Footer .contacts img {
   width: 15%;
   height: auto;
+  display: block;
   margin-left: 1em;
   background-color: #f15a24;
   border-radius: 50%;
@@ -22,11 +23,15 @@
   transition: all 0.45s linear;
 }
 
-/* .Footer .contacts a {
-  width: 10%;
-  height:auto;
+.Footer .contacts a {
+  width: 100%;
+  height: auto;
   text-align: bottom;
-} */
+  padding: 0;
+  margin-bottom: 1em;
+  color: #f15a24;
+  
+}
 
 .Footer .contacts :hover {
   transform: scale(1.05);
@@ -58,4 +63,15 @@
 
 @media only screen and (max-width: 600px) and (min-width: 400px) {
   /* flex-direction: column; */
+.Footer .alivelogo img {
+  flex-direction: column;
+  flex: 10;
+  }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 300px) {
+.Footer .contacts img {
+  width: 15%;
+  transition: all 0.45s linear;
+  }
 }

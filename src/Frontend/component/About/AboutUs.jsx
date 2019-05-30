@@ -5,25 +5,14 @@ export default function AboutUs() {
   return (
     <div className="About">
       <h1>About Us</h1>
-      <br />
-      <h2>
-        Team Charlie's mission is for everybody to have a pleasant experience
-        using public transport. 
-      </h2>
-      <p>
-        At Team Charlie we believe that using current
-        transport data to inform passengers, will allow them to make informed
-        decisions about the best route of transportation for their needs. We
-        want to facilitate people with a disability to travel on public
-        transport with ease. Accessibility Live is our signature application for
-        improving the transport experience of people with a disability, when
-        using transport in and around the city of London. Accessibility Live
-        presents key information that will enhance the experience of people with
-        a disability. The information is based on knowing what stations have a
-        working lift and when a particular station is busy. We want our
-        Accessibility Live application to be the leader in helping many people
-        with transportation.
-      </p>
+      <br></br>
+    <p><h2>Team Charlie's mission is for everybody to have a pleasant experience using public transport. </h2></p>
+    <p>  
+    At Team Charlie we believe that using current transport data to inform passengers, will allow them to make informed decisions about the best route of transportation for their needs.
+    We want to facilitate people with a disability to travel on public transport with ease. Accessibility Live is our signature application for improving the transport experience of people with a disability, when using transport in and around the city of London.
+    Accessibility Live presents key information that will enhance the experience of people with a disability. The information is based on knowing what stations have a working lift and when a particular station is busy. 
+      
+    We want our Accessibility Live application to be the leader in helping many people with transportation.</p>
     </div>
   );
 }

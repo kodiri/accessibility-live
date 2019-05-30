@@ -1,15 +1,14 @@
 .UsefulLinks {
-  background-color: #fdcf32;
-  height: 200px;
-  margin: auto
+  background-color: #F8F8F8;
+  margin: auto;
 }
 
 .innerUsefulLinks {
   flex-wrap: wrap;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
-
 
 .innerUsefulLinks a {
  margin: auto;
@@ -20,8 +19,62 @@
 .Title {
   font-size: 25px;
   font-weight: 700;
-  background-color: #fdcf32;
+  background-color: #F8F8F8;
   padding: 1.4%;
   padding-top: 10px;
 } 
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .Title {
+    font-size: 18px;
+  }
+  .innerUsefulLinks a {
+    margin: auto;
+    font-size: 18px;
+  }
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .Title {
+    font-size: 20px;
+  }
+  .innerUsefulLinks a {
+    margin: auto;
+    font-size: 20px;
+  }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .Title {
+    font-size: 20px;
+  }
+  .innerUsefulLinks a {
+    margin: auto;
+    font-size: 20px;
+  }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .Title {
+    font-size: 22px;
+  }
+  .innerUsefulLinks a {
+    margin: auto;
+    font-size: 22px;
+  }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .Title {
+    font-size: 22px;
+  }
+  .innerUsefulLinks a {
+    margin: auto;
+    font-size: 22px;
+  }
+}

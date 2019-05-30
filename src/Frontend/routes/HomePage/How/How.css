@@ -1,10 +1,12 @@
 .How {
+  position: relative;
   box-sizing: border-box;
   width: 100%;
   height: 100vmin;
   padding: 3em 10%;
   color: aliceblue;
   background-color: #1d1c1c;
+  z-index: 2;
 }
 .How__Title {
   width: 100%;
@@ -27,11 +29,11 @@
 
 .How__List__Item--big {
   font-size: 2em;
-  color: gold;
+  color: #f15a24;
 }
 .How__text--gold {
   font-size: 1em;
-  color: gold;
+  color: #f15a24;
 }
 
 .How__Photo {
@@ -62,4 +64,23 @@
     0% 80%,
     0% 20%
   );
+}
+
+.How__Icon {
+  height: 2em;
+  margin-right: 1em;
+}
+
+@media only screen and (max-width: 700px) {
+  .How {
+    height: 100%;
+    padding: 1em;
+  }
+  .How__Container__Flex {
+    flex-direction: column;
+  }
+  .How__Photo {
+    width: 100%;
+    height: auto;
+  }
 }
