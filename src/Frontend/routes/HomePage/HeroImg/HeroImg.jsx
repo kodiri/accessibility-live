@@ -18,7 +18,7 @@ export default function HeroImg() {
       </div>
       <Link to="/Search" className="HomePage__HeroPhoto--Button__Download">
         <button type="button" className="HomePage__HeroPhoto__Button">
-          Start now <img src={paperAirplaneIcon} alt="start up" className="Button__Icon__Start" />
+          Search!
         </button>
       </Link>
       <a href="#Why" className="HomePage__HeroPhoto--Button__Arrow">
