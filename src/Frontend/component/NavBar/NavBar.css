@@ -56,7 +56,7 @@ img{
 }
 
 .NavBar__Menu a {
-  color: rgba(255, 217, 0, 0.842);
+  color: #f15a24;
   /* Removed:
       display: flex;
       align-self: flex-end;
@@ -127,7 +127,7 @@ img{
 .NavBar .Menu_Icon {
   cursor: pointer;
   display: inline-block;
-  float: right;
+  /* float: right; */
   padding: 28px 20px;
   position: relative;
   user-select: none;
@@ -200,6 +200,7 @@ img{
   .NavBar__Menu_Item {
       display: inline-block;
   }
+}
   
   .NavBar li {
     float: left;

@@ -46,12 +46,14 @@
     margin: 0 auto;
     display: block;
     border-radius: 50%;
-    box-shadow: 5px 10px 0 0 rgb(121, 33, 1);
+    box-shadow: 5px 10px 0 0 rgb(190, 56, 6);
     transition: all 0.3s linear;
   }
+
   .MeetTheTeam__Photos {
     flex: 1;
   }
+  
   .MeetTheTeam__Description {
     width: 100%;
     margin-bottom: 1em;

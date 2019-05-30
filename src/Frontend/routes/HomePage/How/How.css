@@ -8,8 +8,7 @@
   background-color: #1d1c1c;
   z-index: 2;
 }
-
-.How__Tittle {
+.How__Title {
   width: 100%;
   font-size: 2em;
 }
@@ -25,16 +24,16 @@
   margin-right: 2em;
 }
 
-.How__List__Item {
-}
+/* .How__List__Item {
+} */
 
 .How__List__Item--big {
   font-size: 2em;
-  color: gold;
+  color: #f15a24;
 }
 .How__text--gold {
   font-size: 1em;
-  color: gold;
+  color: #f15a24;
 }
 
 .How__Photo {

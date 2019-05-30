@@ -1,11 +1,9 @@
 
 
-Message List
-
 @author S Braham [10:09 AM]
 Accessibility Live - Readme.md 
 
-#### [Contributors](#contributor)|
+#### [Contributors](#contributor)
 
 - Carl Cross
 - Sule Tunkara
@@ -14,7 +12,7 @@ Accessibility Live - Readme.md
 - Sharleen Braham
 
 # </a> Team Charlie
-#### [Introduction](#intro)|
+#### [Introduction](#intro)
 [Scope](#scope)|
 [Trello Board](#trello) |
 [Stack](#stack) |
@@ -24,9 +22,11 @@ Accessibility Live - Readme.md
 [Your local machine environment](#howto)|
 [Useful tutorials](#tutorials)|
 [Useful links](#useful) <br>
-### <a name="intro"></a>Introduction :
-Website : [Transport for London](https://tfl.gov.uk/)
-The transport for London website provides people who wish to travel on public transport, with an option to plan their journey. Passengers with disabiities are very important passengers who require accurate information when planning their journey.
+
+
+### <a name="intro"></a>Introduction : 
+Website |Project link| https://accessibilitylive.herokuapp.com/ | 
+Passenger transport in and around London can be assisted by Transport for London website (https://tfl.gov.uk/), which provides people who wish to travel on public transport, with an option to plan their journey. Passengers with disabilities are very important passengers who require accurate information when planning their journey.
 Currently, people with a disability are not able to determine whether key facilities, such as a lift, are functioning at a certain station. Neither are they able to know if the stations they plan to use are busy.  
 Thus, Accessibility live is a website where pertinent information that is useful to such important passengers will be readily available.
 A passenger with a disability will be able to easily plan their journey with current facilities, popular times and other services for a station being presented to them.
@@ -54,9 +54,6 @@ Link to board if you have one
 ### <a name="reference"></a>References :
 |Twitter-logo|
 <div>Icons made by <a href="https://www.flaticon.com/authors/bogdan-rosu" title="Bogdan Rosu">Bogdan Rosu</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-
-|Facebook-logo|
-<div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 
 |Gmail-logo|
 <div>Icons made by <a href="https://www.flaticon.com/authors/icomoon" title="Icomoon">Icomoon</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
@@ -125,16 +122,12 @@ Please add here if you know any for the stack mentioned above...
 https://github.com/kodiri/accessibility-live
 
 **Summary of all ideas proposed for the project:**
-Ideas proposed as a project included:
-Create an option for filtering YouTube videos that are less than 5 or 10 minutes in length.
-A website/Application for pollution.
-A website/Application for cocktail making
-A template for e-commerce shopping
-Geo location
-
-Collapse
-
-Message Input
+-Ideas proposed as a project included:
+-Create an option for filtering YouTube videos that are less than 5 or 10 minutes in length.
+-A website/Application for pollution.
+-A website/Application for cocktail making
+-A template for e-commerce shopping
+-Geo location
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
