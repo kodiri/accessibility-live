@@ -17,7 +17,7 @@ function NavBar() {
 
         <label
           className="Menu_Icon"
-          for="Menu_Button">
+          htmlFor="Menu_Button">
           <span className="Hamburger"></span>
         </label>
         
