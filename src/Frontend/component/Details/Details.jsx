@@ -1,6 +1,5 @@
 import React from 'react';
 import './Details.css';
-import { BrowserRouter as Router } from 'react-router-dom';
 import DetailsChart from './Images/Details-Chart.png';
 
 export default function Details() {
@@ -24,7 +23,7 @@ export default function Details() {
                 </div>
                 <div className="Details__flex_container--item-2">
                     <img
-                    src={DetailsChart}
+                    src={DetailsChart} alt='add something here'
                     />
                 </div>
             </div>

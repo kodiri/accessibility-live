@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './HeroImg.css';
-import paperAirplaneIcon from '../../../Images/icons/start-up.svg';
 
 export default function HeroImg() {
   return (

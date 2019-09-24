@@ -1,4 +1,4 @@
-import { Router, Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import React, { Component } from 'react';
 
 // Public

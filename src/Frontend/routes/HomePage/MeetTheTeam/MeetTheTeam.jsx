@@ -19,7 +19,7 @@ export default function MeetTheTeam() {
               <div class="opacity"></div>
               <div class="linkedinProfile">
                 <ul>
-                  <li><a href=""><span class="fab fa-linkedin"></span></a></li>
+                  <li><a href=" "><span class="fab fa-linkedin"></span></a></li>
                 </ul>
               </div>
             </div>
@@ -32,7 +32,7 @@ export default function MeetTheTeam() {
               <div class="opacity"></div>
               <div class="linkedinProfile">
                 <ul>
-                  <li><a href=""><span class="fab fa-linkedin"></span></a></li>
+                  <li><a href=" "><span class="fab fa-linkedin"></span></a></li>
                 </ul>
               </div>
             </div>
@@ -58,7 +58,7 @@ export default function MeetTheTeam() {
               <div class="opacity"></div>
               <div class="linkedinProfile">
                 <ul>
-                  <li><a href=""><span class="fab fa-linkedin"></span></a></li>
+                  <li><a href=" "><span class="fab fa-linkedin"></span></a></li>
                 </ul>
               </div>
             </div>
@@ -71,7 +71,7 @@ export default function MeetTheTeam() {
               <div class="opacity"></div>
               <div class="linkedinProfile">
                 <ul>
-                  <li><a href=""><span class="fab fa-linkedin-in"></span></a></li>
+                  <li><a href=" "><span class="fab fa-linkedin-in"></span></a></li>
                 </ul>
               </div>
             </div>

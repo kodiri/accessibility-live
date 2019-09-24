@@ -7,7 +7,7 @@ function NavBar() {
   return (
     <div className='app'>
       <div className="NavBar">
-      <a href="" className="NavBar__Logo"><img src={logo} alt="logo charlie team"/></a>
+      <a href=" " className="NavBar__Logo"><img src={logo} alt="logo charlie team"/></a>
 
         <input
           className="Menu_Button"

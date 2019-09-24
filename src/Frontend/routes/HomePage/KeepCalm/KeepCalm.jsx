@@ -19,7 +19,7 @@ export default function KeepCalm() {
         <a
           className="a__button__apk"
           href="https://mega.nz/#!sZcWnALI!fMMKlbXC3gOAbtfCWMoholqUcE-UDL7mtGNIFGkJWII"
-          target="_blank"
+          target="_blank" rel="noopener noreferrer"
         >
           <img src={googleAppStoreDownload} alt="download button" className="Button__Download" />
         </a>
